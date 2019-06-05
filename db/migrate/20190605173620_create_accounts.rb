@@ -5,7 +5,7 @@ class CreateAccounts < ActiveRecord::Migration[5.1]
       t.string :name
       t.float :interest_rate
       t.float :balance
-      t.string :type
+      t.string :account_type
 
       t.timestamps
     end

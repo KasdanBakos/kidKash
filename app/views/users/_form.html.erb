@@ -1,47 +1,26 @@
-<%= form_with(model: user, local: true) do |form| %>
-  <% if user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-      <ul>
-      <% user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+<%= simple_form_for(@user) do |f| %>
+  <%= f.error_notification %>
+  <div class="row">
+    <div class="form-inputs">
+      <%= f.input :username, label_html: { class: 'active' } %>
+      <%= f.input :first_name, label_html: { class: 'active' } %>
+      <%= f.input :last_name, label_html: { class: 'active' } %>
+      <%= f.input :email, label_html: { class: 'active' } %>
+      <%= f.input :password, label_html: { class: 'active' } %>
+      <%= f.input :password_confirmation, label_html: { class: 'active' } %>
+      <%= f.file_field :picture, label_html: { class: 'active' } %>
+      <% if current_user == nil %>
+        <%= f.input :role, as: :hidden, input_html: { value: "parent" } %>
+      <% elsif current_user != nil && current_user.role == "parent" %>
+        <%= f.input :role, as: :hidden, input_html: { value: "child" } %>
       <% end %>
-      </ul>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :username %>
-    <%= form.text_field :username, id: :user_username %>
   </div>
-
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name, id: :user_first_name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name, id: :user_last_name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :user_email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :photo %>
-    <%= form.text_field :photo, id: :user_photo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :password_digest %>
-    <%= form.text_field :password_digest, id: :user_password_digest %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="row">
+    <div class="form-actions col s8">
+      <%= f.button :submit %>
+    </div>
   </div>
 <% end %>
+
+

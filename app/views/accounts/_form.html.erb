@@ -12,8 +12,9 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, id: :account_user_id %>
+    <% if current_user != nil %>
+      <%= form.input :user_id, as: :hidden, input_html: { value: current_user.id } %>
+    <% end %>
   </div>
 
   <div class="field">
