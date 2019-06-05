@@ -5,6 +5,9 @@ class AccountsController < ApplicationController
   # GET /accounts.json
   def index
     @accounts = Account.all
+    #need to add the childrens accounts to this list
+    @parent_accounts = Account.all.select{|a| a.user_id == current_user.id}
+    @children_accounts = Account.all.select{|a| a.user_id == current_user.id}
   end
 
   # GET /accounts/1
@@ -69,6 +72,6 @@ class AccountsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def account_params
-      params.require(:account).permit(:user_id, :name, :interest_rate, :balance, :type)
+      params.require(:account).permit(:name, :interest_rate)
     end
 end

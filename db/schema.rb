@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20190605173930) do
     t.string "name"
     t.float "interest_rate"
     t.float "balance"
-    t.string "type"
+    t.string "account_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_accounts_on_user_id"
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(version: 20190605173930) do
     t.string "email"
     t.string "photo"
     t.string "password_digest"
+    t.string "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
