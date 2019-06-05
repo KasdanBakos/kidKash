@@ -1362,3 +1362,207 @@ Processing by GoalsController#index as HTML
 Completed 200 OK in 91ms (Views: 89.1ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for ::1 at 2019-06-05 15:52:42 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.6ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 1536ms (Views: 1520.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:54:03 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 531ms (Views: 517.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:54:30 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (2.1ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 123ms (Views: 119.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:54:38 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 400ms (Views: 388.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:54:39 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (2.3ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 84ms (Views: 82.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:54:40 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (1.3ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 92ms (Views: 90.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:54:55 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (2.9ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 473ms (Views: 461.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:55:27 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.3ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 404ms (Views: 392.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:57:01 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.6ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 496ms (Views: 481.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:57:03 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 112ms (Views: 110.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:58:08 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 479ms (Views: 467.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 15:59:17 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (2.9ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 492ms (Views: 479.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 16:01:19 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.1ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 971ms (Views: 958.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 16:03:21 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.3ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 436ms (Views: 423.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 16:03:43 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (4.1ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 327ms (Views: 323.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 16:04:03 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (2.9ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 730ms (Views: 718.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 16:04:36 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 1538ms (Views: 1523.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 16:06:02 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (2.9ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 1498ms (Views: 1485.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 16:06:25 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 412ms (Views: 397.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 16:06:43 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (4.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 1492ms (Views: 1474.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 16:08:22 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (4.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 546ms (Views: 542.5ms | ActiveRecord: 0.6ms)
+
+
