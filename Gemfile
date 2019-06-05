@@ -75,6 +75,9 @@ gem 'carrierwave'
 # authorization gem
 gem 'cancancan'
 
+# added gems
+gem 'react-rails'
+
 # Materialize and UI gems
 gem 'best_in_place', '~> 3.0.1'
 gem 'materialize-sass', '0.100.2'
