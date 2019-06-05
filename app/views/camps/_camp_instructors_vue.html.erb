@@ -1,0 +1,63 @@
+<div id="assignments">
+  <%= hidden_field_tag "camp_id", @camp.id %>
+  <div class="card ">
+    <div class="card-content ">
+      <span class="card-title">Camp Instructors</span>
+      <% if @camp.instructors.empty? %>
+      <p>No instructors at this time</p>
+      <% else %>
+        <ul is='instructor-row' 
+            v-for="instructor in instructors" 
+            v-bind:instructor="instructor"
+            class="no_bullet">  
+        </ul>
+      <% end %>
+      </div>
+      <div class="card-action">
+      <%= link_to "Add a new instructor", "#", {%s(v-on:click) => "switch_modal()"} %>
+      </div>
+  </div>
+
+  <div v-if="modal_open">
+    <new-instructor-form></new-instructor-form>
+    <div class="waves-effect waves-light btn white black-text">
+      <%= link_to "Close Form", "#", {%s(v-on:click) => "switch_modal()"} %>
+      <br>
+    </div>
+  </div>
+
+
+</div>  <!-- End of div#assignments -->
+
+
+
+
+<!--  much easier to include this complicated template here 
+      rather than in the js file (IMO) -->
+<script type="text/x-template" id="camp-instructor-form-template">
+  <%= render "camp_instructor_form_template" %>
+</script>
+
+
+
+<% if current_user.role?(:admin) %>
+  <script type="text/x-template" id="instructor-row">
+    <li>
+      <a v-on:click="remove_record(instructor)" class="remove">x&nbsp;&nbsp;</a>
+      <a v-bind:href="instructor.url">{{ instructor.last_name }},&nbsp;{{ instructor.first_name }}</a>
+    </li>
+  </script>
+
+<% elsif current_user.role?(:parent) %>
+  <script type="text/x-template" id="instructor-row">
+      <li>
+        {{ instructor.last_name }},&nbsp;{{ instructor.first_name }}
+      </li>
+  </script>
+<% end %>
+
+
+
+
+
+

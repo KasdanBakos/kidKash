@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col s7">
+    <%= render :partial => "camp_details" %>
+  </div>
+  <div class="col s5" id="sidebar">
+    <% if current_user != nil %>
+      <% if current_user.role?(:admin) %>
+        <%= render :partial => "camp_instructors_vue"%>
+        <%= render :partial => "camp_students_vue"%>
+      <% end %>
+      
+      <% if current_user.role?(:instructor) and current_user.instructor.camps.include?(@camp) %>
+        <%= render :partial => "students_list", locals: {students: @students, state: "Students"} %>
+      <% elsif current_user.role?(:parent) %>
+        <%= render :partial => "instructor_list", locals: {instructors: @instructors, state: "Students"} %>
+        <%= render :partial => "students_list", locals: {students: @students, state: "Students"} %>
+        <%= render :partial => "camp_students_vue"%>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<div class="row">
+  <div class="col s12">
+    <%= render :partial => "partials/object_options", locals: {model_name: "camp", object: @camp} %>
+  </div>
+</div>
+

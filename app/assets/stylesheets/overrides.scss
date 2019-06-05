@@ -1,0 +1,187 @@
+html {
+  background-color: #F7F7F7;
+}
+
+nav {
+  background-color: white !important;
+}
+
+nav img {
+  width: 60px;
+  height: 60px;
+}
+nav ul a {
+  color: gray
+}
+
+footer {
+  background-color: #aec7ef !important;
+}
+
+nav, #nav {
+  box-shadow: none;
+  box-shadow: 1px 1px 1px gainsboro;
+}
+
+.card {
+  box-shadow: none;
+  box-shadow: 1px 1px 1px gainsboro;
+}
+
+/********** FORMS ********/
+.switch label input[type=checkbox]:checked + .lever {
+  background-color: #2979ff;
+}
+
+.switch label input[type=checkbox]:checked + .lever::after {
+  background-color: #303F9F;
+}
+
+/********** CARDS ********/
+.card a {
+  color: black;
+}
+
+.card a:hover {
+  color: gainsboro;
+}
+
+.card {
+  padding: 10px;
+  box-shadow: 1px 1px 0px lightgray;
+}
+.card .card-title {
+  font-size: 12pt;
+}
+
+#dash-row .card {
+  height: 100px
+}
+
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: #e0f7fa;
+}
+
+.card .remove {
+  color: #b71c1c;
+}
+
+li.no_bullet {
+  list-style-type: none;
+}
+
+/********** BUTTONS ********/
+.btn-alert {
+  background-color: #c62828;
+  color: #fff;
+}
+.btn-alert:hover {
+  background-color: #e53935;
+  color: #fff;
+}
+
+
+/********** FLASH MSGS ********/
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+  color: #008000;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+  color: #800000;
+}
+
+/********** FLASH MSGs ********/
+.alert-box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+  position: relative;
+  transition: opacity 300ms ease-out;
+  background-color: #008CBA;
+  border-color: #0078a0;
+  color: #FFFFFF; } 
+  .alert-box .close {
+    right: 0.25rem;
+    background: inherit;
+    color: #333333;
+    font-size: 1.375rem;
+    line-height: .9;
+    margin-top: -0.6875rem;
+    opacity: 0.3;
+    padding: 0 6px 4px;
+    position: absolute;
+    top: 50%; }
+    .alert-box .close:hover, .alert-box .close:focus {
+      opacity: 0.5; }
+  .alert-box.radius {
+    border-radius: 3px; }
+  .alert-box.round {
+    border-radius: 1000px; }
+  .alert-box.success {
+    background-color: #e8f5e9;
+    border-color: #a5d6a7;
+    color: #1b5e20; }
+  .alert-box.alert {
+    background-color: #f04124;
+    border-color: #de2d0f;
+    color: #FFFFFF; }
+  .alert-box.secondary {
+    background-color: #e7e7e7;
+    border-color: #c7c7c7;
+    color: #4f4f4f; }
+  .alert-box.warning {
+    background-color: #fff3e0;
+    border-color: #ffcc80;
+    color: #ef6c00; }
+  .alert-box.info {
+    background-color: #a0d3e8;
+    border-color: #74bfdd;
+    color: #4f4f4f; }
+  .alert-box.alert-close {
+    opacity: 0; }
+
+.card {
+  padding:20px 20px;
+  margin:0;
+}
+
+.card-action a {
+  color: darkblue !important;
+}
+
+#sidebar .card {
+  margin-bottom: 40px;
+}
+
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.btn, .btn-large {
+  background-color: #88a3cc !important;
+}
+      
+.blue {
+        background-color: #aec7ef !important;
+      }

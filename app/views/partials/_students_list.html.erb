@@ -1,0 +1,25 @@
+<% if students != nil %>
+  <div class="card ">
+    <div class="card-content ">
+      <span class="card-title"><%= state %></span>
+      <% if students.empty? %>
+        <p>No students at this time</p>
+      <% else %>
+        <table>
+          <thead>
+            <th>Name</th>
+            <th>Rating</th>
+            <th>Age</th>
+          </thead>
+            <% for student in students %>
+              <tr>
+                <td><%= link_to student.name, student_path(student) %></td>
+                <td><%= student.rating %></td>
+                <td>&nbsp;<%= student.age %></td>
+              </tr>
+            <% end %>
+        </table>
+      <% end %>
+    </div>
+  </div>
+<% end %>

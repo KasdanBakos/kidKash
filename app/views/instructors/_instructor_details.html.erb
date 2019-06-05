@@ -1,0 +1,16 @@
+<h3><%= @instructor.proper_name %></h3>
+
+<h5>Basic Information</h5>
+<p><strong>Bio: </strong><%= @instructor.bio %></p>
+<p><strong>Email: </strong><%= @instructor.email %></p>
+<p><strong>Phone: </strong><%= number_to_phone @instructor.phone %></p>
+<% if @instructor.picture_url.nil? %>
+  <div id="instructor_image"><%= image_tag 'no_image.jpg', width:"200", height:"200" %></div>
+<% else %>
+  <div id="instructor_image"><%= image_tag @instructor.picture_url.to_s, width:"200", height:"200" %></div>
+<% end %>
+<p><strong>Active:</strong>
+  <%= @instructor.active ? "Yes" : "No" %>
+</p>
+
+

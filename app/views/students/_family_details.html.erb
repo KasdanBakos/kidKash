@@ -1,0 +1,10 @@
+
+<div class="card ">
+  <div class="card-content ">
+    <h5>Parent Information</h5>
+    <p><strong>Parent Name: </strong><%= link_to "#{@student.family.parent_first_name} #{@student.family.family_name}", family_path(@student.family) %></p>
+    <p><strong>Email: </strong><%= mail_to @student.family.email, @student.family.email, encode: "javascript" %><br /></p>
+    <p><strong>Phone: </strong><%= number_to_phone @student.family.phone %></p>
+    <p><strong>Active: </strong> <%= @student.active ? "Yes" : "No" %></p>
+  </div>
+</div>

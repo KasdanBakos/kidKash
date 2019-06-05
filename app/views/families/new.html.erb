@@ -1,0 +1,10 @@
+<% if current_user == nil %>
+    <h1>New Account</h1>
+    <%= render 'guest_form', family: @family %>
+<% elsif current_user.role?(:admin) %>
+    <h1>New Family</h1>
+    <%= render 'admin_form', family: @family %>
+<% end %>
+
+
+<%= link_to 'Back', families_path %>

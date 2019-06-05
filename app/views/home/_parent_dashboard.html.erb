@@ -1,0 +1,97 @@
+<h3>Welcome, <%= current_user.family.parent_first_name %> <%= current_user.family.family_name %> </h3>
+
+<div class="row" id="stat-row">
+  <!-- Stats about which camps need an instructor -->
+  <div class="col s5">
+    <div class="card">
+    <div class="card-title"><strong>Your Students: </strong></div>
+      <% if @your_students.empty? %>
+        <div class="card-text">
+          You have no students in the system.
+        </div>
+      <% else %>
+        <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Rating</th>
+            <th>Registrations Count</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @your_students.each do |student| %>
+            <tr>
+              <td><%= link_to student.name, student %></td>
+              <td><%= student.rating %></td>
+              <td><%= student.registrations.count %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+
+      <% end %>
+    </div>
+
+
+    <div class="card">
+    <div class="card-title"><strong>Total Paid: </strong></div>
+      <% if @total_spent == 0 %>
+        <div class="card-text">
+          You haven't spent anything, go get spending!
+        </div>
+      <% else %>
+        <div class="card-text">
+          $<%= @total_spent %>
+        </div>
+
+
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="col s7">
+    <div class="card">
+    <div class="card-title"><strong>Upcoming Registrations: </strong></div>
+      <% if @upcoming_regs.nil? or @upcoming_regs.empty? %>
+        <div class="card-text">
+          You have no upcoming registrations
+        </div>
+      <% else %>
+        <table>
+        <thead>
+          <tr>
+            <th>Camp</th>
+            <th>Student</th>
+            <th>Date</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @upcoming_regs.each do |reg| %>
+            <tr>
+              <td><%= link_to reg.camp.curriculum.name, reg.camp %></td>
+              <td><%= link_to reg.student.proper_name, reg.student %></td>
+              <td><%= reg.camp.start_date.strftime("%m/%d/%y") %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+
+      <% end %>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="row" id="combo-graph-row">
+    <%= render :partial => "combo_parent" %>
+</div>
+
+

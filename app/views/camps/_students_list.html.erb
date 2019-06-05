@@ -1,0 +1,27 @@
+<div class="card ">
+  <div class="card-content ">
+    <span class="card-title"><%= state %> </span>
+    <% if students.empty? %>
+    <p>No students registered at this time</p>
+    <% else %>
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Rating</th>
+        </thead>
+          <% for student in students %>
+            <tr>
+              <% if current_user.role?(:admin) || current_user.role?(:instructor) %>
+                <td><%= link_to student.name, student_path(student) %></td>
+              <% elsif current_user.role?(:parent) %>
+                <td><%= student.name %></td>
+              <% end %>
+              <td><%= student.age %></td>
+              <td>&nbsp;<%= student.rating %></td>
+            </tr>
+          <% end %>
+      </table>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<div id="assignments2">
+  <%= hidden_field_tag "camp_id", @camp.id %>
+  <% if current_user.role?(:admin) %>
+    <div class="card ">
+      <div class="card-content ">
+        <span class="card-title">Students Registered</span>
+        <% if @camp.students.empty? %>
+        <p>No students at this time</p>
+        <% else %>
+          <ul is='student-row' 
+              v-for="student in students" 
+              v-bind:student="student"
+              class="no_bullet">  
+          </ul>
+        <% end %>
+        </div>
+        <div class="card-action">
+        <% if @camp.max_students - @camp.registrations.count > 0 && (current_user.role?(:parent) || current_user.role?(:admin)) %>
+          <% if current_user.role?(:parent) && current_user.family.students.count != 0 || current_user.role?(:admin) %>
+            <%= link_to "Add student to cart", "#", {%s(v-on:click) => "switch_modal()"} %>
+          <% end %>
+        <% end %>
+        </div>
+    </div>
+  <% end %>
+
+  <% if current_user.role?(:parent) && (@camp.max_students - @camp.registrations.count > 0) %>
+    <% if current_user.family.students.select{|s| s.eligible(@camp, s)}.count != 0 %>
+      <div class="card-action">
+         <div class="waves-effect waves-light btn black white-text">
+          <%= link_to "Add student to cart", "#", {%s(v-on:click) => "switch_modal()"} %>
+        </div>
+      </div>
+    <% else %>
+      <strong><p>You have no students to add to this camp</p></strong>
+    <% end %>
+  <% end %>
+
+  <div v-if="modal_open">
+    <new-registration-form></new-registration-form>
+    <div class="waves-effect waves-light btn white black-text">
+      <%= link_to "Close Form", "#", {%s(v-on:click) => "switch_modal()"} %>
+      <br>
+    </div>
+  </div>
+
+
+</div>  <!-- End of div#assignments -->
+
+
+<!--  much easier to include this complicated template here 
+      rather than in the js file (IMO) -->
+<script type="text/x-template" id="registration-form-template">
+  <%= render "camp_student_form_template" %>
+</script>
+
+
+<% if current_user.role?(:admin) %>
+  <script type="text/x-template" id="student-row">
+    <li>
+      <a v-on:click="remove_record2(student)" class="remove">x&nbsp;&nbsp;</a>
+      <a v-bind:href="student.url">{{ student.last_name }},&nbsp;{{ student.first_name }}</a>
+    </li>
+  </script>
+
+<% elsif current_user.role?(:parent) %>
+  <script type="text/x-template" id="student-row">
+      <li>
+        {{ student.last_name }},&nbsp;{{ student.first_name }}
+      </li>
+  </script>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+

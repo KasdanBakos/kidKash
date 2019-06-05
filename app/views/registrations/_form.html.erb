@@ -1,0 +1,22 @@
+<%= simple_form_for(@registration, :url => final_checkout_path) do |f| %>
+  <%= f.error_notification %>
+  <div class="row">
+    <div class="form-inputs">
+      <%= f.input :credit_card_number, label_html: { class: 'active'} %>
+      <%= f.input :expiration_year, label_html: { class: 'active' } %>
+      <%= f.input :expiration_month, label_html: { class: 'active' } %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-actions col s8">
+      <%= f.button :submit %>
+    </div>
+  </div>
+<% end %>
+
+
+  <!--times = @camp.time_slot == "am" ? [["Morning", "am"], ["Afternoon", "pm"]] : [["Afternoon", "pm"], ["Morning", "am"]]
+      <%# f.select :time_slot, times, :prompt => "Select Time of Day..." %>-->
+
+      
+      

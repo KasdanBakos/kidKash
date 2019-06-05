@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col s5">
+    <div class="card">
+      <div class="card-content">
+    <%= render :partial => "user_details" %>
+  </div>
+</div>
+  </div>
+  <div class="col s7" id="sidebar">
+    <% if @user.role == 'parent' %>
+        <%= render :partial => "partials/students_list", locals: {students: @users_students, state: "Students"} %>
+    <% elsif @user.role == 'instructor' %>
+        <%= render :partial => "partials/camps_list", locals: {camps: @users_camps, state: "Camps"} %>
+    <% end %>
+  </div>
+</div>
+<div class="row">
+  <div class="col s12">
+    <!-- MAKE IT SO THAT EDITING THE USER IS DEPENDENT ON ROLES AND OPENS CORRECT FORM -->
+    <% if current_user.role?(:admin) %>
+      <%= render :partial => "partials/object_options", locals: {model_name: "user", object: @user} %>
+    <% elsif current_user.role?(:instructor) %>
+      <%= render :partial => "partials/object_options", locals: {model_name: "instructor", object: @user.instructor} %>
+    <% elsif current_user.role?(:parent) %>
+      <%= render :partial => "partials/object_options", locals: {model_name: "family", object: @user.family} %>
+    <% end %>
+  </div>
+</div>
+

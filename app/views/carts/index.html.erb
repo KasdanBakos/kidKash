@@ -1,0 +1,52 @@
+<div class="card">
+      <div class="card-content">  
+  <p id="notice"><%= notice %></p>
+
+  <% if @cart.empty? %>
+    <h3>There are no items in your cart</h3>
+  <% else %>
+    <h3>Cart</h3>
+
+    <table>
+    <thead>
+      <tr>
+        <th>Camp</th>
+        <th>Student</th>
+        <th>Date</th>
+        <th>Cost</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @cart.each do |item| %>
+        <tr>
+          <!-- link these by their names to the object page -->
+          <td><%= item["camp_name"] %></td> 
+          <td><%= item["student_name"] %></td>
+          <td><%= item["date"] %></td>
+          <td>$<%= item["cost"] %></td>
+          <td><a data-method="delete" href="<%= remove_from_cart_path(item["ids"][0], item["ids"][1]) %>" rel="nofollow"><i class="material-icons left red-text">close</i></a></td>
+        </tr>
+      <% end %>
+    </tbody>
+    </table>
+
+    <br>
+    <br>
+    <!-- add total cost -->
+    Total: $<%= @total_cost %>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <%= link_to 'Checkout Cart', checkout_path, class: 'waves-effect waves-light btn' %>
+    <%= link_to 'Empty Cart', empty_cart_path, class: 'waves-effect waves-light btn' %>
+
+
+
+  <% end %>
+</div>
+</div>

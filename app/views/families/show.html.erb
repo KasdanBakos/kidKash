@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col s5">
+    <div class="card">
+      <div class="card-content">
+    <%= render :partial => "family_details" %>
+  </div>
+</div>
+  </div>
+  <div class="col s7" id="sidebar">
+    <!-- This is where students and registrations will go -->
+    <% if current_user.role?(:parent) or current_user.role?(:admin) %>
+      <%= render :partial => "partials/registrations_list", locals: {registrations: @registrations, state: "Registrations"} %>
+      <%= render :partial => "partials/students_list", locals: {students: @students, state: "Students"} %>
+    <% end %>
+  </div>
+
+
+</div>
+<div class="row">
+  <div class="col s12">
+    <%= render :partial => "partials/object_options", locals: {model_name: "family", object: @family} %>
+  </div>
+</div>
