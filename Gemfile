@@ -77,6 +77,7 @@ gem 'cancancan'
 
 # added gems
 gem 'react-rails'
+gem 'webpacker'
 
 # Materialize and UI gems
 gem 'best_in_place', '~> 3.0.1'
