@@ -7,7 +7,7 @@
     <tr>
       <th>User</th>
       <th>Name</th>
-      <th>Interest rate</th>
+      <th>Interest Rate</th>
       <th>Balance</th>
       <th>Type</th>
       <th colspan="3"></th>
@@ -18,13 +18,10 @@
     <% @accounts.each do |account| %>
       <tr>
         <td><%= account.user %></td>
-        <td><%= account.name %></td>
+        <td><%= link_to account.name, account %></td>
         <td><%= account.interest_rate %></td>
         <td><%= account.balance %></td>
-        <td><%= account.type %></td>
-        <td><%= link_to 'Show', account %></td>
-        <td><%= link_to 'Edit', edit_account_path(account) %></td>
-        <td><%= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= account.account_type %></td>
       </tr>
     <% end %>
   </tbody>
