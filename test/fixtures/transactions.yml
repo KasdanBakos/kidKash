@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1.5
+  description: MyString
+  type: 
+  to_account: one
+  from_account: one
+  date: 2019-06-05 13:38:34
+
+two:
+  amount: 1.5
+  description: MyString
+  type: 
+  to_account: two
+  from_account: two
+  date: 2019-06-05 13:38:34

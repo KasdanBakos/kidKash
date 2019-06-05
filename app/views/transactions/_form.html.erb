@@ -1,16 +1,47 @@
-<%= simple_form_for(@transaction) do |f| %>
-  <%= f.error_notification %>
+<%= form_with(model: transaction, local: true) do |form| %>
+  <% if transaction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
 
-  <div class="form-inputs">
-    <%= f.input :amount %>
-    <%= f.input :description %>
-    <%= f.input :type %>
-    <%= f.association :to_account %>
-    <%= f.association :from_account %>
-    <%= f.input :date %>
+      <ul>
+      <% transaction.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :amount %>
+    <%= form.text_field :amount, id: :transaction_amount %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :transaction_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type %>
+    <%= form.text_field :type, id: :transaction_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :to_account_id %>
+    <%= form.text_field :to_account_id, id: :transaction_to_account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :from_account_id %>
+    <%= form.text_field :from_account_id, id: :transaction_from_account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date, id: :transaction_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
   </div>
 <% end %>

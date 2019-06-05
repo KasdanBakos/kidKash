@@ -1,14 +1,6 @@
 <h1>Editing User</h1>
 
-
-<% if current_user.role?(:admin) %>
-    <%= render 'form', user: @user %>
-<% elsif current_user.role?(:instructor) %>
-    <%= render 'instructors/form', instructor: @user.instructor %>
-<% elsif current_user.role?(:parent) %>
-    <%= render 'families/form', family: @user.family %>
-<% end %>
-
+<%= render 'form', user: @user %>
 
 <%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>
