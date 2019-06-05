@@ -1,5 +1,7 @@
 {
   "name": "kidKash",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@material-ui/core": "^4.0.2"
+  }
 }
