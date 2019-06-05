@@ -1,4 +1,32 @@
 FactoryBot.define do
+  factory :goal do
+    name "MyString"
+    description "MyString"
+    user nil
+    created_at "2019-06-05 11:32:33"
+    due_at "2019-06-05"
+    completed false
+    amount 1.5
+  end
+  factory :transaction do
+    amount 1.5
+    description "MyString"
+    type ""
+    to_account nil
+    from_account nil
+    date "2019-06-05 11:30:52"
+  end
+  factory :parent_child do
+    parent nil
+    child nil
+  end
+  factory :account do
+    user nil
+    name "MyString"
+    interest_rate 1.5
+    balance 1.5
+    type ""
+  end
   
   factory :curriculum do
     name "Mastering Chess Tactics"
