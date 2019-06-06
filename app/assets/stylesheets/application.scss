@@ -23,6 +23,19 @@
 
 .secondary{
     background-color: rgb(9, 174, 213)!important;
+}
+
+.footer {
+    background-color:rgb(9, 174, 213)!important;
+    color: white;
+    height: 150px;
+    .header {
+        color: white;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
     padding-left: 8%;
     padding-right: 8%;
 }
