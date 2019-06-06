@@ -2,6 +2,53 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// TRANSACTIONS CSS
+
+.transaction-title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    color: #086788;
+}
+
+.transaction-interest {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+    color: #06AED5;
+}
+
+.transaction-header {
+    border: 2px solid white;
+    text-align: left;
+    background: #06AED5;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+    padding: 6px 10px 6px 10px;
+}
+
+.transaction-cell {
+    border: 2px solid #086788;
+    text-align: left;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #086788;
+    padding: 6px 10px 6px 10px;
+}
+
+// ACCOUNT STYLES
+
 .accountWrapper {
     max-width: 1800px;
 }
@@ -45,15 +92,49 @@
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 45px;
-    margin: 10px;
+    line-height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
 }
 
 .account-line {
-    width: 416px;
+    width: 350px;
     height: 0px;
     border: 1px solid #086788;
     margin: auto;
     margin-top: -20px;
     margin-bottom: 20px;
+}
+
+.account-reminder {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 45px;
+    text-align: center;
+    color: #DD1C1A; 
+}
+
+.account-knowledge-title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 60px;
+    color: #086788;
+}
+
+.account-knowledge-body {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 32px;
+    color: #086788;
 }

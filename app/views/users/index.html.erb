@@ -28,10 +28,44 @@
 
 <br>
 
+# transaction history page
+<div>
+  <div class="ui two column grid" style="padding: 10px">
+    <div class="column">
+      <div class="transaction-title">Rich Fairbank | Savings Account</div>
+    </div>
+    <div class="column" style="text-align: right; padding: 10px">
+      <span class="transaction-interest" style="color: black">Current Interest: </span><span class="transaction-interest" style="font-weight: bold">10% </span>
+    </div>
+  </div>
+  <table style="width: 100%; border-collapse: collapse">
+  <thead>
+    <tr>
+      <th class="transaction-header">Date</th>
+      <th class="transaction-header">Description</th>
+      <th class="transaction-header">Amount</th>
+      <th class="transaction-header">Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    # <% @users.each do |user| %>
+      <tr>
+        <td class="transaction-cell"><%= user.username %></td>
+        <td class="transaction-cell"><%= user.first_name %></td>
+        <td class="transaction-cell"><%= user.last_name %></td>
+        <td class="transaction-cell"><%= user.email %></td>
+      </tr>
+    # <% end %>
+  </tbody>
+</table>
+</div>
+
+# parent viewing child's account tiles
+
 <div class="accountWrapper">
 <div class="ui stackable two column grid">
   <div class="column">
-    <div class="ui segment account">
+    <div class="ui segment account" style="min-width: 400px">
       <div class="account-wrapper">
         <div class="account-title">Checking Account</div>
         <div style="text-align: center">
@@ -45,7 +79,7 @@
     </div>
   </div>
   <div class="column">
-    <div class="ui segment account">
+    <div class="ui segment account" style="min-width: 400px">
       <div class="account-wrapper">
         <div class="account-title">Savings Account</div>
         <div style="text-align: center">
@@ -56,6 +90,59 @@
       </div>
     </div>
   </div>
+</div>
+</div>
+
+
+
+# child viewing own accounts
+
+<div class="accountWrapper">
+<div class="ui stackable three column grid">
+  <div class="column">
+    <div class="ui segment account" style="min-width: 400px">
+      <div class="account-wrapper">
+        <div class="account-title">Checking Account</div>
+        <div style="text-align: center">
+          <div class="account-balance">$50.00</div>
+          <div class="account-line"></div>
+          <div class="account-reminder">Save your money to earn more money!</div>
+          <button class="account-button" style="color: white; background-color: #06AED5">View Details</button>
+          <button class="account-button" style="color: #DD1C1A; background-color: #FFDC51">Transfer $ to Savings</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui segment account" style="min-width: 400px">
+      <div class="account-wrapper">
+        <div class="account-title">Savings Account</div>
+        <div style="text-align: center">
+          <div class="account-balance">$50.00</div>
+          <div class="account-line"></div>
+          <div class="account-reminder">You will get $5 of interest in 14 days!</div>
+          <button class="account-button" style="color: white; background-color: #06AED5">View Details</button>
+          <button class="account-button" style="color: #DD1C1A; background-color: #FFDC51">Transfer $ to Checking</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui segment account" style="min-width: 400px">
+      <div class="account-wrapper">
+        <div class="account-knowledge-title">Important Words</div>
+        <div class="account-knowledge-body"><span style="text-decoration: underline; font-weight: bold">Interest</span><br/>
+        money paid each month to reward you for saving!
+        <br/><br/>
+        <span style="text-decoration: underline; font-weight: bold">Checking</span><br/>
+        the account from which you can spend your money!
+        <br/><br/>
+        <span style="text-decoration: underline; font-weight: bold">Savings</span><br/>
+        the account that pays you interest for saving your money!</div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 </div>
 

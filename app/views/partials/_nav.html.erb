@@ -1,7 +1,13 @@
 <div class="ui secondary menu">
   <div class="item">
   
-  <a href="/" class="item white"><i class="child icon big"></i> <span style="font-size: 20px">KID KA$H</span></a>
+  <% if current_user == nil %>
+    <a href="/" class="item white"><i class="child icon big"></i> <span style="font-size: 20px">KID KA$H</span></a>
+  <% elsif current_user != nil && current_user.role == "Parent" %>
+    <a href="/dashboard" class="item white"><i class="child icon big"></i> <span style="font-size: 20px">KID KA$H</span></a>
+  <% elsif current_user != nil && current_user.role == "Child" %>
+    <a href="/dashboard" class="item white"><i class="child icon big"></i> <span style="font-size: 20px">KID KA$H</span></a>  
+  <% end %>
   </div>
   <div class="right item" style="font-size: 20px">
     <% if logged_in? %>
