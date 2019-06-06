@@ -14,8 +14,6 @@
  *= require_self
  */
 
- @import "semantic-ui";
-
 .main{
     padding-left: 10%;
     padding-right: 10%;
@@ -23,6 +21,8 @@
 
 .secondary{
     background-color: rgb(9, 174, 213)!important;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .footer {
@@ -38,8 +38,24 @@
     }
     padding-left: 8%;
     padding-right: 8%;
+<<<<<<< HEAD
     position:fixed;
     left:0px;
     bottom:0px;
     right:0px;
 }
+=======
+}
+
+.white{
+    color: white!important;
+    text-decoration-color: white; 
+}
+
+.item{
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+}
+
+@import "semantic-ui";
+>>>>>>> 2f557a557050c298a557cb79122069207406f95a
