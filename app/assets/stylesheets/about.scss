@@ -1,0 +1,33 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#about_us {
+    margin: 100px;
+}
+
+.row {
+    font-family: Quicksand !important;
+}
+
+h1, .row .column {
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+img {
+    border-radius: 100%;
+}
+
+h1, h2 {
+    font-family: Quicksand !important;
+    color: #06AED5;
+    margin-top: 50px !important;
+}
+
+p {
+    font-family: Quicksand !important;
+    color: #086788;
+    font-size: 18px !important;
+    line-height: 5px;
+}

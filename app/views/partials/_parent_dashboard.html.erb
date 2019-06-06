@@ -15,7 +15,7 @@
           </div>
           <div id="savings" class="container">
               <p id="label">Savings</p>
-              <p id="balance">$<%= @your_children_accounts[2*i].balance %></p>
+              <p id="balance">$<%= @your_children_accounts[(2*i)+1].balance %></p>
           </div>
           <br>
           <%= link_to '<button class="button" id="view_child_details">View / Modify Details</button>'.html_safe, @your_children_accounts[2*i].get_user %>

@@ -2,20 +2,51 @@
 
 <h3>My Accounts: </h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Checking Account</th>
-      <th>Savings Account</th>
-
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td><%= link_to @my_accounts[0].name, @my_accounts[0] %></td>
-      <td><%= link_to @my_accounts[1].name, @my_accounts[1] %></td>
-    </tr>
-  </tbody>
-</table>
+<div class="accountWrapper">
+<div class="ui stackable three column grid">
+  <div class="column">
+    <div class="ui segment account" style="min-width: 400px">
+      <div class="account-wrapper">
+        <div class="account-title">Checking Account</div>
+        <div style="text-align: center">
+          <div class="account-balance">$<%= @my_accounts[0].balance %></div>
+          <div class="account-line"></div>
+          <div class="account-reminder">Save your money to earn more money!</div>
+          <%= link_to '<button class="account-button" style="color: white; background-color: #06AED5">View Details</button>'.html_safe, transactions_path %>
+          <%= link_to '<button class="account-button" style="color: #DD1C1A; background-color: #FFDC51">Transfer $ to Savings</button>'.html_safe, "/transactions/new" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui segment account" style="min-width: 400px">
+      <div class="account-wrapper">
+        <div class="account-title">Savings Account</div>
+        <div style="text-align: center">
+          <div class="account-balance">$<%= @my_accounts[1].balance %></div>
+          <div class="account-line"></div>
+          <div class="account-reminder">You will get interest in 25 days!</div>
+          <%= link_to '<button class="account-button" style="color: white; background-color: #06AED5">View Details</button>'.html_safe, transactions_path %>
+          <%= link_to '<button class="account-button" style="color: #DD1C1A; background-color: #FFDC51">Transfer $ to Checkings</button>'.html_safe, "/transactions/new" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui segment account" style="min-width: 400px">
+      <div class="account-wrapper">
+        <div class="account-knowledge-title">Important Words</div>
+        <div class="account-knowledge-body"><span style="text-decoration: underline; font-weight: bold">Interest</span><br/>
+        money paid each month to reward you for saving!
+        <br/><br/>
+        <span style="text-decoration: underline; font-weight: bold">Checking</span><br/>
+        the account from which you can spend your money!
+        <br/><br/>
+        <span style="text-decoration: underline; font-weight: bold">Savings</span><br/>
+        the account that pays you interest for saving your money!</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

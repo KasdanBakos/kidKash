@@ -45,8 +45,8 @@ class User < ApplicationRecord
 
     #callback
     def create_accounts
-        Account.create(user: self, name: "Default Checking Account", balance: 0, account_type: "checking")
-        Account.create(user: self, name: "Default Savings Account", balance: 0, account_type: "savings")
+        Account.create(user: self, name: "Default Checking Account", interest_rate: 0, balance: 0, account_type: "checking")
+        Account.create(user: self, name: "Default Savings Account", interest_rate: 5, balance: 0, account_type: "savings")
     end
 
 
