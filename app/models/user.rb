@@ -23,6 +23,18 @@ class User < ApplicationRecord
         end
     end
 
+    def get_transactions
+        Transaction.all.where{ |t| self.get_accounts(self).include?(t.to_account) or self.get_accounts(self).include?(t.from_account) }
+    end
+
+    def get_children_transactions
+        final_arr = []
+        self.find_children.each do |child|
+            final_arr.append(child.get_transactions)
+        end
+        return final_arr.flatten
+    end
+
     def name
         self.first_name + " " +  self.last_name
     end
