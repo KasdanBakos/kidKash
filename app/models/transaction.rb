@@ -5,7 +5,6 @@ class Transaction < ApplicationRecord
     after_create :set_transaction_type
     after_create :update_balance
 
-    # make callback to set transaction type
     def set_transaction_type
         if(self.amount > 0)
             self.update_attribute(:trans_type, "Deposit")
@@ -19,8 +18,6 @@ class Transaction < ApplicationRecord
         Account.all.select{ |a| a.id == num}
     end
 
-    # make callback to update balance
-    #TODO
     def update_balance
         account_from = self.get_account(self.from_account)
         account_to = self.get_account(self.to_account)

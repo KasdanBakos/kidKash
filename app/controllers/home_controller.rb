@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  # before_action :check_login, only: [:dashboard]
+  before_action :check_login, only: [:dashboard]
   def index
   end
 
@@ -13,7 +13,9 @@ class HomeController < ApplicationController
   end
 
   def dashboard
-    @my_accounts = current_user.get_accounts(current_user)
+    if !current_user.nil?
+      @my_accounts = current_user.get_accounts(current_user)
+    end
     
     #for parent
     if !current_user.nil? and current_user.role == "Parent"
