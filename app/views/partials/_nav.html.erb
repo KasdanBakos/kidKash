@@ -5,6 +5,7 @@
   <div class="right item">
     <% if logged_in? %>
       <%= link_to "Logout", logout_path,  class:"item" %>
+
     <% else %>
       <%= link_to "Login", login_path, class:"item" %>
     <% end %>
