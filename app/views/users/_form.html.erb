@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%= form_for @user,   :html => {:class => "ui form"} do |f| %>
       <div class="two fields">
         <div class="field">
@@ -30,9 +31,11 @@
         </div>
       </div>
       <% if current_user == nil %>
-        <%= f.hidden_field :role, as: :hidden, input_html: { value: "parent" } %>
-      <% elsif current_user != nil && current_user.role == "parent" %>
-        <%= f.hidden_field :role, as: :hidden, input_html: { value: "child" } %>
+        <%= f.hidden_field :role, as: :hidden, input_html: { value: "Parent" } %>
+        <%= f.hidden_field :relative_id, as: :hidden, input_html: { value: nil } %>
+      <% elsif current_user != nil && current_user.role == "Parent" %>
+        <%= f.hidden_field :role, as: :hidden, input_html: { value: "Child" } %>
+        <%= f.hidden_field :relative_id, as: :hidden, input_html: { value: current_user.id } %>
       <% end %>
   <div class="row">
     <div class="form-actions col s8">

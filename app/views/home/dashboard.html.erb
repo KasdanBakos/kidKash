@@ -1,0 +1,9 @@
+<div class="row">
+  <% if !current_user.nil? %>
+      <% if current_user.role == "Parent" %>
+        <%= render :partial => "partials/parent_dashboard" %>
+      <% elsif current_user.role == "Child" %>
+        <%= render :partial => "partials/child_dashboard" %>
+      <% end %>
+  <% end %>
+</div>

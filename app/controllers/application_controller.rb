@@ -17,4 +17,10 @@ class ApplicationController < ActionController::Base
   def check_login
     redirect_to login_path, alert: "You need to log in to view this page." if current_user.nil?
   end
+
+  before_action :set_current_user
+
+  def set_current_user
+    User.current_user = current_user
+  end
 end

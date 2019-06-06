@@ -35,15 +35,6 @@ ActiveRecord::Schema.define(version: 20190605173930) do
     t.index ["user_id"], name: "index_goals_on_user_id"
   end
 
-  create_table "parent_children", force: :cascade do |t|
-    t.integer "parent_id"
-    t.integer "child_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["child_id"], name: "index_parent_children_on_child_id"
-    t.index ["parent_id"], name: "index_parent_children_on_parent_id"
-  end
-
   create_table "transactions", force: :cascade do |t|
     t.float "amount"
     t.string "description"
@@ -65,6 +56,7 @@ ActiveRecord::Schema.define(version: 20190605173930) do
     t.string "photo"
     t.string "password_digest"
     t.string "role"
+    t.integer "relative_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
