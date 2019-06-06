@@ -1,8 +1,11 @@
 class User < ApplicationRecord
     has_secure_password
+    cattr_accessor :current_user
 
 
-
+    def is_child
+        return current_user.role == "Child"
+    end
 
 
 

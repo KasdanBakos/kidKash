@@ -17,16 +17,17 @@
   <tbody>
     <% @accounts.each do |account| %>
       <tr>
-        <td><%= account.user %></td>
-        <td><%= link_to account.name, account %></td>
-        <td><%= account.interest_rate %></td>
-        <td><%= account.balance %></td>
-        <td><%= account.account_type %></td>
+        <td><%= react_component("AccountCard", account) %></td>
+        <td><%= react_component("AccountCard2") %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+
+<p>BREAK</p>
+<%= react_component('Hello', name: 'a component rendered from a view') %>
+<p> end break</p>
 
 <%= link_to 'New Account', new_account_path %>

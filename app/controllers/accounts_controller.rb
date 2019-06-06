@@ -5,9 +5,12 @@ class AccountsController < ApplicationController
   # GET /accounts.json
   def index
     @accounts = Account.all
+    # byebug
     #need to add the childrens accounts to this list
-    @parent_accounts = Account.all.select{|a| a.user_id == current_user.id}
-    @children_accounts = Account.all.select{|a| a.user_id == current_user.id}
+    if(current_user != nil)
+      @parent_accounts = Account.all.select{|a| a.user_id == current_user.id}
+      @children_accounts = Account.all.select{|a| a.user_id == current_user.id}
+    end
   end
 
   # GET /accounts/1

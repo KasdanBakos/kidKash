@@ -2527,3 +2527,1997 @@ Processing by GoalsController#index as HTML
 Completed 200 OK in 5913ms (Views: 5899.7ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2019-06-05 18:01:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (3148.2ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+Completed 200 OK in 5268ms (Views: 5253.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:10:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (3241.5ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+Completed 200 OK in 5147ms (Views: 5132.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:10:58 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (12.2ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 1739ms (Views: 1727.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:12:54 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (2663.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4484ms (Views: 4472.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:14:12 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (2697.5ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4520ms (Views: 4508.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:15:47 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (3153.7ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+Completed 200 OK in 5159ms (Views: 5145.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:17:03 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (3026.5ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+Completed 200 OK in 4958ms (Views: 4944.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:17:57 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (2682.1ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+Completed 200 OK in 4576ms (Views: 4561.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:18:13 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (13.4ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 74.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:22:09 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (3246.3ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 5221ms (Views: 5208.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:22:48 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (2767.0ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4718ms (Views: 4705.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:25:54 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/index.html.erb within layouts/application (0.8ms)
+Completed 500  in 19ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting ')'
+...k_tag 'accountCard' accountType: 'Checking', amount: '78', i...
+...                    ^~~~~~~~~~~
+/Users/xaq392/Desktop/kidKash/app/views/goals/index.html.erb:42: syntax error, unexpected ',', expecting ')'
+...tCard' accountType: 'Checking', amount: '78', isChild: false...
+...                              ^
+/Users/xaq392/Desktop/kidKash/app/views/goals/index.html.erb:42: syntax error, unexpected ',', expecting ')'
+...Type: 'Checking', amount: '78', isChild: false );@output_buf...
+...                              ^:
+  app/views/goals/index.html.erb:42:in `'
+
+Started POST "/__better_errors/e7e4d5073b8ebb04/variables" for ::1 at 2019-06-05 18:25:56 -0400
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT  "goals".* FROM "goals" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-06-05 18:26:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (2658.8ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+Completed 200 OK in 4541ms (Views: 4529.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:27:13 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (3256.0ms)
+  Rendered partials/_nav.html.erb (1.0ms)
+Completed 200 OK in 5184ms (Views: 5169.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 18:29:37 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (17.8ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 1856ms (Views: 1843.6ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20190605173515)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "first_name" varchar, "last_name" varchar, "email" varchar, "photo" varchar, "password_digest" varchar, "role" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190605173515"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateAccounts (20190605173620)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "interest_rate" float, "balance" float, "account_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_b1e30bebc8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_accounts_on_user_id" ON "accounts" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190605173620"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateParentChildren (20190605173723)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "parent_children" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "child_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_95b9a11c2e"
+FOREIGN KEY ("parent_id")
+  REFERENCES "parents" ("id")
+, CONSTRAINT "fk_rails_4ca765c1be"
+FOREIGN KEY ("child_id")
+  REFERENCES "children" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_parent_id" ON "parent_children" ("parent_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_parent_children_on_parent_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_parent_children_on_parent_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_child_id" ON "parent_children" ("child_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190605173723"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTransactions (20190605173834)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" float, "description" varchar, "type" varchar, "to_account_id" integer, "from_account_id" integer, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_dfd3db5073"
+FOREIGN KEY ("to_account_id")
+  REFERENCES "to_accounts" ("id")
+, CONSTRAINT "fk_rails_f11d9eb2ff"
+FOREIGN KEY ("from_account_id")
+  REFERENCES "from_accounts" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_to_account_id" ON "transactions" ("to_account_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_transactions_on_to_account_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_transactions_on_to_account_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_from_account_id" ON "transactions" ("from_account_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190605173834"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGoals (20190605173930)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "goals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "user_id" integer, "created_at" datetime NOT NULL, "due_at" date, "completed" boolean, "amount" float, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_c5fd9c8a38"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190605173930"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-05 23:34:32.937412"], ["updated_at", "2019-06-05 23:34:32.937412"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_accounts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_accounts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_goals_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_goals_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_parent_children_on_parent_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_parent_children_on_parent_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_transactions_on_to_account_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_transactions_on_to_account_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-06-05 19:35:08 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.6ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (24.7ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 2649ms (Views: 2633.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 19:35:17 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (1.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 144ms (Views: 138.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 19:35:51 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "accounts"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "interest_rate" float, "balance" float, "account_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_accounts_on_user_id" ON "accounts" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "goals"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "goals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "user_id" integer, "created_at" datetime NOT NULL, "due_at" date, "completed" boolean, "amount" float, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "parent_children"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "parent_children" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "child_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_child_id" ON "parent_children" ("child_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_parent_id" ON "parent_children" ("parent_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "transactions"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" float, "description" varchar, "type" varchar, "to_account_id" integer, "from_account_id" integer, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_from_account_id" ON "transactions" ("from_account_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_to_account_id" ON "transactions" ("to_account_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "first_name" varchar, "last_name" varchar, "email" varchar, "photo" varchar, "password_digest" varchar, "role" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190605173930)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190605173834),
+(20190605173620),
+(20190605173515),
+(20190605173723);
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-05 23:41:47.410487"], ["updated_at", "2019-06-05 23:41:47.410487"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "accounts"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "interest_rate" float, "balance" float, "account_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_accounts_on_user_id" ON "accounts" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "goals"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "goals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "user_id" integer, "created_at" datetime NOT NULL, "due_at" date, "completed" boolean, "amount" float, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "parent_children"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "parent_children" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "child_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_child_id" ON "parent_children" ("child_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_parent_id" ON "parent_children" ("parent_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "transactions"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" float, "description" varchar, "type" varchar, "to_account_id" integer, "from_account_id" integer, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_from_account_id" ON "transactions" ("from_account_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_to_account_id" ON "transactions" ("to_account_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "first_name" varchar, "last_name" varchar, "email" varchar, "photo" varchar, "password_digest" varchar, "role" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190605173930)[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190605173834),
+(20190605173620),
+(20190605173515),
+(20190605173723);
+
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-05 23:41:47.486061"], ["updated_at", "2019-06-05 23:41:47.486061"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-06-05 23:41:47.489533"], ["key", "environment"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/accounts" for ::1 at 2019-06-05 19:42:19 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.6ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 15582ms (Views: 2006.4ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "accounts"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "interest_rate" float, "balance" float, "account_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_accounts_on_user_id" ON "accounts" ("user_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "goals"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "goals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "user_id" integer, "created_at" datetime NOT NULL, "due_at" date, "completed" boolean, "amount" float, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "parent_children"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "parent_children" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "child_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_child_id" ON "parent_children" ("child_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_parent_id" ON "parent_children" ("parent_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "transactions"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" float, "description" varchar, "type" varchar, "to_account_id" integer, "from_account_id" integer, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_from_account_id" ON "transactions" ("from_account_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_to_account_id" ON "transactions" ("to_account_id")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "first_name" varchar, "last_name" varchar, "email" varchar, "photo" varchar, "password_digest" varchar, "role" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "accounts"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "interest_rate" float, "balance" float, "account_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_accounts_on_user_id" ON "accounts" ("user_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "goals"[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "goals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "user_id" integer, "created_at" datetime NOT NULL, "due_at" date, "completed" boolean, "amount" float, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "parent_children"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "parent_children" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "child_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_child_id" ON "parent_children" ("child_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_parent_id" ON "parent_children" ("parent_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "transactions"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" float, "description" varchar, "type" varchar, "to_account_id" integer, "from_account_id" integer, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_from_account_id" ON "transactions" ("from_account_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_to_account_id" ON "transactions" ("to_account_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "first_name" varchar, "last_name" varchar, "email" varchar, "photo" varchar, "password_digest" varchar, "role" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "development"], ["updated_at", "2019-06-05 23:44:09.342935"], ["key", "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-06-05 23:44:09.364380"], ["key", "environment"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/accounts" for ::1 at 2019-06-05 19:44:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+Started GET "/accounts" for ::1 at 2019-06-05 19:44:32 -0400
+Started GET "/accounts" for ::1 at 2019-06-05 19:44:32 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (0.6ms)
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (3.9ms)
+  Rendered accounts/index.html.erb within layouts/application (5.5ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+  Rendered partials/_nav.html.erb (0.1ms)
+  Rendered partials/_nav.html.erb (0.1ms)
+Completed 200 OK in 16425ms (Views: 8344.2ms | ActiveRecord: 0.6ms)
+
+
+Completed 200 OK in 6950ms (Views: 5892.0ms | ActiveRecord: 0.4ms)
+
+
+Completed 500  in 8346ms (ActiveRecord: 0.4ms)
+
+
+
+RuntimeError - can't add a new key into hash during iteration:
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___4035042035385761713_70167363469900'
+
+Started POST "/__better_errors/3aa9a627deed249f/variables" for ::1 at 2019-06-05 19:44:41 -0400
+Started GET "/accounts" for ::1 at 2019-06-05 19:45:08 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.3ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 1934ms (Views: 1919.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "accounts"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "interest_rate" float, "balance" float, "account_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_accounts_on_user_id" ON "accounts" ("user_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "goals"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "goals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "user_id" integer, "created_at" datetime NOT NULL, "due_at" date, "completed" boolean, "amount" float, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "parent_children"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "parent_children" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "child_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_child_id" ON "parent_children" ("child_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_parent_id" ON "parent_children" ("parent_id")[0m
+  [1m[35m (4.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "transactions"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" float, "description" varchar, "type" varchar, "to_account_id" integer, "from_account_id" integer, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_from_account_id" ON "transactions" ("from_account_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_to_account_id" ON "transactions" ("to_account_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "first_name" varchar, "last_name" varchar, "email" varchar, "photo" varchar, "password_digest" varchar, "role" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (2.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "accounts"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "interest_rate" float, "balance" float, "account_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_accounts_on_user_id" ON "accounts" ("user_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "goals"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "goals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "user_id" integer, "created_at" datetime NOT NULL, "due_at" date, "completed" boolean, "amount" float, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35m (6.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "parent_children"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "parent_children" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "child_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_child_id" ON "parent_children" ("child_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_parent_children_on_child_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_parent_children_on_parent_id" ON "parent_children" ("parent_id")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "transactions"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" float, "description" varchar, "type" varchar, "to_account_id" integer, "from_account_id" integer, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_from_account_id" ON "transactions" ("from_account_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_transactions_on_from_account_id' AND type='index'
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_to_account_id" ON "transactions" ("to_account_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "first_name" varchar, "last_name" varchar, "email" varchar, "photo" varchar, "password_digest" varchar, "role" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "development"], ["updated_at", "2019-06-05 23:46:22.168661"], ["key", "environment"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-06-05 23:46:22.188480"], ["key", "environment"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "first_name", "last_name", "email", "photo", "password_digest", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "Kaz"], ["first_name", "Kaz"], ["last_name", "H"], ["email", "hi@gmail.com"], ["photo", "asdf.jpg"], ["password_digest", "sslkdfjk"], ["role", "Parent"], ["created_at", "2019-06-05 23:49:20.677575"], ["updated_at", "2019-06-05 23:49:20.677575"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "accounts" ("user_id", "name", "interest_rate", "balance", "account_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Default Checking Account"], ["interest_rate", 0.0], ["balance", 0.0], ["account_type", "checking"], ["created_at", "2019-06-05 23:49:20.711327"], ["updated_at", "2019-06-05 23:49:20.711327"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "accounts" ("user_id", "name", "interest_rate", "balance", "account_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Default Savings Account"], ["interest_rate", 5.0], ["balance", 0.0], ["account_type", "savings"], ["created_at", "2019-06-05 23:49:20.715428"], ["updated_at", "2019-06-05 23:49:20.715428"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "accounts" ("user_id", "name", "interest_rate", "balance", "account_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Primary"], ["interest_rate", 10.0], ["balance", 40.0], ["account_type", "Checking"], ["created_at", "2019-06-05 23:49:20.721939"], ["updated_at", "2019-06-05 23:49:20.721939"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/accounts" for ::1 at 2019-06-05 19:49:38 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+Completed 500  in 25ms (ActiveRecord: 0.6ms)
+
+
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/controllers/accounts_controller.rb:10:in `block in index'
+  app/controllers/accounts_controller.rb:10:in `index'
+
+Started POST "/__better_errors/6b12c1e0f39cda0d/variables" for ::1 at 2019-06-05 19:49:38 -0400
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/__better_errors/6b12c1e0f39cda0d/eval" for ::1 at 2019-06-05 19:49:46 -0400
+Started GET "/accounts" for ::1 at 2019-06-05 19:50:18 -0400
+Processing by AccountsController#index as HTML
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (38.3ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 1921ms (Views: 1917.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 19:52:02 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (19.6ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 90ms (Views: 86.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 19:52:25 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (11.9ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 19:53:04 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (13.0ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 19:54:07 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (11.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 96.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 19:54:34 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (1.5ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 83ms (Views: 81.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 19:54:54 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (13.1ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 101ms (Views: 99.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 20:02:00 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.6ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 81.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:02:04 -0400
+Processing by AccountsController#index as HTML
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (23.3ms)
+Completed 500  in 27ms (ActiveRecord: 0.6ms)
+
+
+
+NoMethodError - undefined method `account_type' for nil:NilClass:
+  app/views/accounts/index.html.erb:21:in `block in _app_views_accounts_index_html_erb___2942292262407759108_70117347956320'
+  app/views/accounts/index.html.erb:18:in `_app_views_accounts_index_html_erb___2942292262407759108_70117347956320'
+
+Started POST "/__better_errors/22a07fdd1053c357/variables" for ::1 at 2019-06-05 20:02:04 -0400
+Started POST "/__better_errors/22a07fdd1053c357/eval" for ::1 at 2019-06-05 20:02:38 -0400
+Started POST "/__better_errors/22a07fdd1053c357/eval" for ::1 at 2019-06-05 20:02:42 -0400
+Started POST "/__better_errors/22a07fdd1053c357/eval" for ::1 at 2019-06-05 20:02:56 -0400
+Started POST "/__better_errors/22a07fdd1053c357/eval" for ::1 at 2019-06-05 20:02:59 -0400
+Started POST "/__better_errors/22a07fdd1053c357/eval" for ::1 at 2019-06-05 20:03:08 -0400
+Started POST "/__better_errors/22a07fdd1053c357/eval" for ::1 at 2019-06-05 20:03:23 -0400
+Started GET "/accounts" for ::1 at 2019-06-05 20:04:19 -0400
+Processing by AccountsController#index as HTML
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (13.4ms)
+Completed 500  in 16ms (ActiveRecord: 0.1ms)
+
+
+
+NoMethodError - undefined method `is_child' for nil:NilClass:
+  app/views/accounts/index.html.erb:21:in `block in _app_views_accounts_index_html_erb___2942292262407759108_70117288290380'
+  app/views/accounts/index.html.erb:18:in `_app_views_accounts_index_html_erb___2942292262407759108_70117288290380'
+
+Started POST "/__better_errors/ddfd27315af933b2/variables" for ::1 at 2019-06-05 20:04:19 -0400
+Started POST "/__better_errors/ddfd27315af933b2/eval" for ::1 at 2019-06-05 20:04:31 -0400
+Started GET "/login" for ::1 at 2019-06-05 20:04:42 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (366.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 449ms (Views: 447.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 20:04:47 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (9.8ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 74.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:04:51 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (35.5ms)
+  Rendered users/new.html.erb within layouts/application (37.1ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 122ms (Views: 119.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-06-05 20:05:09 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3f5YBgqop6n+zFgyU3lXgQmZmaYlC+wbC91bEmluK7TDX/heZ+TAlSGpK4L5Qdwoi17Ju0qP7WNTnT2ZNz4fDg==", "user"=>{"username"=>"mark", "first_name"=>"mark", "last_name"=>"mark", "email"=>"mark@s.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"parent"}, "commit"=>"Create User"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "first_name", "last_name", "email", "password_digest", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "mark"], ["first_name", "mark"], ["last_name", "mark"], ["email", "mark@s.com"], ["password_digest", "$2a$12$reW2JFe3G5XcawqnY4YjVOpFXtQV5waKVD5wmZDycz65JplOewA6e"], ["role", "parent"], ["created_at", "2019-06-06 00:05:09.867123"], ["updated_at", "2019-06-06 00:05:09.867123"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "accounts" ("user_id", "name", "interest_rate", "balance", "account_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["name", "Default Checking Account"], ["interest_rate", 0.0], ["balance", 0.0], ["account_type", "checking"], ["created_at", "2019-06-06 00:05:09.869568"], ["updated_at", "2019-06-06 00:05:09.869568"]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "accounts" ("user_id", "name", "interest_rate", "balance", "account_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["name", "Default Savings Account"], ["interest_rate", 5.0], ["balance", 0.0], ["account_type", "savings"], ["created_at", "2019-06-06 00:05:09.871189"], ["updated_at", "2019-06-06 00:05:09.871189"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 204ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/users/2" for ::1 at 2019-06-05 20:05:09 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 67.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for ::1 at 2019-06-05 20:05:12 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-05 20:05:15 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oKIrRzdBqYi9Hnf9KCfzLOq+eW/9TOxSwmBLIl5pqQqvajSRF7uQ7WtPxb8KGF4gnq3TZSmEvUaAqmzCJXyR5A==", "username"=>"mark", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mark"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2019-06-05 20:05:15 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_nav.html.erb (1.2ms)
+Completed 200 OK in 66ms (Views: 63.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 20:05:20 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_nav.html.erb (1.2ms)
+Completed 200 OK in 66ms (Views: 64.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:05:23 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (21.1ms)
+Completed 500  in 27ms (ActiveRecord: 0.3ms)
+
+
+
+NameError - undefined local variable or method `current_user' for #<User:0x00007f8af0953da0>:
+  app/models/user.rb:6:in `is_child'
+  app/views/accounts/index.html.erb:21:in `block in _app_views_accounts_index_html_erb___2942292262407759108_70117359343380'
+  app/views/accounts/index.html.erb:18:in `_app_views_accounts_index_html_erb___2942292262407759108_70117359343380'
+
+Started POST "/__better_errors/7e397f958ffd4265/variables" for ::1 at 2019-06-05 20:05:23 -0400
+Started POST "/__better_errors/7e397f958ffd4265/eval" for ::1 at 2019-06-05 20:05:34 -0400
+Started GET "/accounts" for ::1 at 2019-06-05 20:06:39 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (7.0ms)
+Completed 500  in 30ms (ActiveRecord: 1.3ms)
+
+
+
+NoMethodError - undefined method `role' for nil:NilClass:
+  app/models/user.rb:7:in `is_child'
+  app/views/accounts/index.html.erb:21:in `block in _app_views_accounts_index_html_erb___2942292262407759108_70117342533440'
+  app/views/accounts/index.html.erb:18:in `_app_views_accounts_index_html_erb___2942292262407759108_70117342533440'
+
+Started POST "/__better_errors/b7908faf55e7d7e6/variables" for ::1 at 2019-06-05 20:06:40 -0400
+Started GET "/accounts" for ::1 at 2019-06-05 20:08:05 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (62.5ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 170ms (Views: 146.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:08:55 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (8.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 72.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:09:05 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (7.0ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 107ms (Views: 103.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:09:06 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (7.4ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 77.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:09:32 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (39.8ms)
+  Rendered partials/_nav.html.erb (0.6ms)
+Completed 200 OK in 151ms (Views: 146.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:10:20 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (3687.8ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 3801ms (Views: 3776.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:11:51 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (33.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 145ms (Views: 108.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:12:01 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (33.4ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 107ms (Views: 102.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:12:45 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (26.7ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 96ms (Views: 92.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:13:02 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (32.6ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 124ms (Views: 119.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:13:14 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (26.7ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 91.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 20:15:16 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (6.8ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 2018ms (Views: 1983.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:15:20 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/index.html.erb within layouts/application (19.7ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 99ms (Views: 86.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:17:28 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (287.3ms)
+Completed 500  in 295ms (ActiveRecord: 0.2ms)
+
+
+
+React::ServerRendering::PrerenderError - Encountered error "#<ExecJS::ProgramError: Invariant Violation: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.>" when prerendering AccountCard with {"account_type":"Checking","balance":"78","is_child":false}
+invariant ((execjs):456:19)
+ReactDOMServerRenderer.render ((execjs):3948:11)
+ReactDOMServerRenderer.read ((execjs):3636:33)
+Object.renderToString ((execjs):4168:31)
+Object.serverRender ((execjs):28668:42)
+eval (eval at <anonymous> ((execjs):30235:8), <anonymous>:6:45)
+eval (eval at <anonymous> ((execjs):30235:8), <anonymous>:18:13)
+(execjs):30235:8
+(execjs):30241:14
+(execjs):1:40
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:39:in `exec'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:21:in `eval'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/server_rendering/exec_js_renderer.rb:39:in `render_from_parts'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/server_rendering/exec_js_renderer.rb:20:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/server_rendering/bundle_renderer.rb:40:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/server_rendering.rb:27:in `block in render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/connection_pool-2.2.2/lib/connection_pool.rb:65:in `block (2 levels) in with'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/connection_pool-2.2.2/lib/connection_pool.rb:64:in `handle_interrupt'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/connection_pool-2.2.2/lib/connection_pool.rb:64:in `block in with'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/connection_pool-2.2.2/lib/connection_pool.rb:61:in `handle_interrupt'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/connection_pool-2.2.2/lib/connection_pool.rb:61:in `with'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/server_rendering.rb:26:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/rails/component_mount.rb:67:in `prerender_component'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/rails/component_mount.rb:34:in `block in react_component'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/helpers/capture_helper.rb:39:in `block in capture'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/helpers/capture_helper.rb:203:in `with_output_buffer'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/helpers/capture_helper.rb:39:in `capture'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/helpers/tag_helper.rb:272:in `content_tag'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/rails/component_mount.rb:50:in `react_component'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/rails/view_helper.rb:21:in `react_component'
+/Users/xaq392/Desktop/kidKash/app/views/accounts/index.html.erb:20:in `block in _app_views_accounts_index_html_erb___2283405203598465088_70175828403100'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.1.7/lib/active_record/relation/delegation.rb:39:in `each'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.1.7/lib/active_record/relation/delegation.rb:39:in `each'
+/Users/xaq392/Desktop/kidKash/app/views/accounts/index.html.erb:18:in `_app_views_accounts_index_html_erb___2283405203598465088_70175828403100'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/template.rb:157:in `block in render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:168:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/template.rb:352:in `instrument_render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/template.rb:155:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/template_renderer.rb:52:in `block (2 levels) in render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:166:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/template_renderer.rb:51:in `block in render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/template_renderer.rb:50:in `render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/template_renderer.rb:14:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/rendering.rb:103:in `_render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/streaming.rb:217:in `_render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/rendering.rb:83:in `render_to_body'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/renderers.rb:141:in `render_to_body'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/abstract_controller/rendering.rb:24:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/rendering.rb:36:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.1.7/lib/active_record/railties/controller_runtime.rb:29:in `cleanup_view_runtime'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:43:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/abstract_controller/base.rb:186:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/rails/controller_lifecycle.rb:31:in `use_react_component_helper'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/abstract_controller/callbacks.rb:19:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/rescue.rb:20:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:166:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.1.7/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/abstract_controller/base.rb:124:in `process'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/rendering.rb:30:in `process'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal.rb:189:in `dispatch'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal.rb:253:in `dispatch'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/journey/router.rb:33:in `each'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/journey/router.rb:33:in `serve'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/routing/route_set.rb:844:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/meta_request-0.7.0/lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/meta_request-0.7.0/lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/etag.rb:25:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/conditional_get.rb:25:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/session/abstract/id.rb:232:in `context'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/session/abstract/id.rb:226:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.1.7/lib/active_record/migration.rb:556:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/callbacks.rb:97:in `run_callbacks'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/better_errors-2.5.1/lib/better_errors/middleware.rb:84:in `protected_app_call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/better_errors-2.5.1/lib/better_errors/middleware.rb:79:in `better_errors_call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/better_errors-2.5.1/lib/better_errors/middleware.rb:57:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-contrib-2.1.0/lib/rack/contrib/response_headers.rb:17:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/meta_request-0.7.0/lib/meta_request/middlewares/headers.rb:16:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:30:in `block in call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/runtime.rb:22:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/static.rb:125:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/sendfile.rb:111:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/webpacker-4.0.7/lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-proxy-0.6.5/lib/rack/proxy.rb:57:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/puma-3.12.1/lib/puma/configuration.rb:227:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/puma-3.12.1/lib/puma/server.rb:660:in `handle_request'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/puma-3.12.1/lib/puma/server.rb:474:in `process_client'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/puma-3.12.1/lib/puma/server.rb:334:in `block in run'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/puma-3.12.1/lib/puma/thread_pool.rb:135:in `block in spawn_thread':
+  app/views/accounts/index.html.erb:20:in `block in _app_views_accounts_index_html_erb___2283405203598465088_70175828403100'
+  app/views/accounts/index.html.erb:18:in `_app_views_accounts_index_html_erb___2283405203598465088_70175828403100'
+
+Started POST "/__better_errors/d2bc0efd72fd55cc/variables" for ::1 at 2019-06-05 20:17:28 -0400
+Started GET "/accounts" for ::1 at 2019-06-05 20:19:07 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (242.0ms)
+Completed 500  in 251ms (ActiveRecord: 0.4ms)
+
+
+
+React::ServerRendering::PrerenderError - Encountered error "#<ExecJS::ProgramError: Invariant Violation: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.>" when prerendering AccountCard with {"account_type":"Checking","balance":"78","is_child":false}
+invariant ((execjs):456:19)
+ReactDOMServerRenderer.render ((execjs):3948:11)
+ReactDOMServerRenderer.read ((execjs):3636:33)
+Object.renderToString ((execjs):4168:31)
+Object.serverRender ((execjs):28668:42)
+eval (eval at <anonymous> ((execjs):30235:8), <anonymous>:6:45)
+eval (eval at <anonymous> ((execjs):30235:8), <anonymous>:18:13)
+(execjs):30235:8
+(execjs):30241:14
+(execjs):1:40
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:39:in `exec'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:21:in `eval'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/server_rendering/exec_js_renderer.rb:39:in `render_from_parts'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/server_rendering/exec_js_renderer.rb:20:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/server_rendering/bundle_renderer.rb:40:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/server_rendering.rb:27:in `block in render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/connection_pool-2.2.2/lib/connection_pool.rb:65:in `block (2 levels) in with'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/connection_pool-2.2.2/lib/connection_pool.rb:64:in `handle_interrupt'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/connection_pool-2.2.2/lib/connection_pool.rb:64:in `block in with'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/connection_pool-2.2.2/lib/connection_pool.rb:61:in `handle_interrupt'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/connection_pool-2.2.2/lib/connection_pool.rb:61:in `with'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/server_rendering.rb:26:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/rails/component_mount.rb:67:in `prerender_component'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/rails/component_mount.rb:34:in `block in react_component'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/helpers/capture_helper.rb:39:in `block in capture'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/helpers/capture_helper.rb:203:in `with_output_buffer'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/helpers/capture_helper.rb:39:in `capture'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/helpers/tag_helper.rb:272:in `content_tag'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/rails/component_mount.rb:50:in `react_component'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/rails/view_helper.rb:21:in `react_component'
+/Users/xaq392/Desktop/kidKash/app/views/accounts/index.html.erb:20:in `block in _app_views_accounts_index_html_erb___2283405203598465088_70175805057220'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.1.7/lib/active_record/relation/delegation.rb:39:in `each'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.1.7/lib/active_record/relation/delegation.rb:39:in `each'
+/Users/xaq392/Desktop/kidKash/app/views/accounts/index.html.erb:18:in `_app_views_accounts_index_html_erb___2283405203598465088_70175805057220'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/template.rb:157:in `block in render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:168:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/template.rb:352:in `instrument_render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/template.rb:155:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/template_renderer.rb:52:in `block (2 levels) in render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:166:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/template_renderer.rb:51:in `block in render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/template_renderer.rb:50:in `render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/template_renderer.rb:14:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/rendering.rb:103:in `_render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/streaming.rb:217:in `_render_template'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/rendering.rb:83:in `render_to_body'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/renderers.rb:141:in `render_to_body'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/abstract_controller/rendering.rb:24:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/rendering.rb:36:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/2.6.0/benchmark.rb:308:in `realtime'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.1.7/lib/active_record/railties/controller_runtime.rb:29:in `cleanup_view_runtime'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:43:in `render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/abstract_controller/base.rb:186:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/react-rails-2.5.0/lib/react/rails/controller_lifecycle.rb:31:in `use_react_component_helper'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/abstract_controller/callbacks.rb:19:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/rescue.rb:20:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:166:in `instrument'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.1.7/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/abstract_controller/base.rb:124:in `process'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/action_view/rendering.rb:30:in `process'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal.rb:189:in `dispatch'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_controller/metal.rb:253:in `dispatch'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/journey/router.rb:33:in `each'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/journey/router.rb:33:in `serve'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/routing/route_set.rb:844:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/meta_request-0.7.0/lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/meta_request-0.7.0/lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/etag.rb:25:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/conditional_get.rb:25:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/session/abstract/id.rb:232:in `context'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/session/abstract/id.rb:226:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.1.7/lib/active_record/migration.rb:556:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/callbacks.rb:97:in `run_callbacks'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/better_errors-2.5.1/lib/better_errors/middleware.rb:84:in `protected_app_call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/better_errors-2.5.1/lib/better_errors/middleware.rb:79:in `better_errors_call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/better_errors-2.5.1/lib/better_errors/middleware.rb:57:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-contrib-2.1.0/lib/rack/contrib/response_headers.rb:17:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/meta_request-0.7.0/lib/meta_request/middlewares/headers.rb:16:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:30:in `block in call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/runtime.rb:22:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/static.rb:125:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/sendfile.rb:111:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/webpacker-4.0.7/lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-proxy-0.6.5/lib/rack/proxy.rb:57:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/puma-3.12.1/lib/puma/configuration.rb:227:in `call'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/puma-3.12.1/lib/puma/server.rb:660:in `handle_request'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/puma-3.12.1/lib/puma/server.rb:474:in `process_client'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/puma-3.12.1/lib/puma/server.rb:334:in `block in run'
+/Users/xaq392/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/puma-3.12.1/lib/puma/thread_pool.rb:135:in `block in spawn_thread':
+  app/views/accounts/index.html.erb:20:in `block in _app_views_accounts_index_html_erb___2283405203598465088_70175805057220'
+  app/views/accounts/index.html.erb:18:in `_app_views_accounts_index_html_erb___2283405203598465088_70175805057220'
+
+Started POST "/__better_errors/b2f6b7d5a5829f61/variables" for ::1 at 2019-06-05 20:19:07 -0400
+Started GET "/accounts" for ::1 at 2019-06-05 20:19:16 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (1.6ms)
+  Rendered partials/_nav.html.erb (0.6ms)
+Completed 200 OK in 91ms (Views: 86.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 20:21:47 -0400
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (1.6ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 142ms (Views: 138.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:21:51 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (3.4ms)
+  Rendered partials/_nav.html.erb (0.7ms)
+Completed 200 OK in 140ms (Views: 135.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:22:32 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 70.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:23:27 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 127ms (Views: 101.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:23:38 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (3.1ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 106ms (Views: 82.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:24:01 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.1ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 115ms (Views: 91.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:24:32 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (6.2ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+Completed 200 OK in 2032ms (Views: 1983.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:25:28 -0400
+Started GET "/accounts" for ::1 at 2019-06-05 20:25:38 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.1ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 89ms (Views: 66.3ms | ActiveRecord: 1.3ms)
+
+
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (1.7ms)
+  Rendered partials/_nav.html.erb (0.1ms)
+Completed 200 OK in 87ms (Views: 65.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:26:40 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 122ms (Views: 118.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:28:56 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+Completed 200 OK in 3451ms (Views: 3425.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:32:19 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (3.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+Completed 200 OK in 3075ms (Views: 3047.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:33:30 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  Rendered accounts/index.html.erb within layouts/application (0.8ms)
+Completed 500  in 7ms (ActiveRecord: 0.3ms)
+
+
+
+SyntaxError - syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~:
+  app/views/accounts/index.html.erb:36:in `'
+
+Started POST "/__better_errors/18a28952d9dc40a4/variables" for ::1 at 2019-06-05 20:33:30 -0400
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/accounts" for ::1 at 2019-06-05 20:37:45 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (6.4ms)
+  Rendered partials/_nav.html.erb (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+Completed 200 OK in 5072ms (Views: 5031.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:38:01 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 81.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:38:57 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+Completed 200 OK in 3020ms (Views: 2976.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:39:26 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+Completed 200 OK in 3005ms (Views: 2951.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:39:57 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.7ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+Completed 200 OK in 3129ms (Views: 3038.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:40:07 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.9ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/xaq392/Desktop/kidKash/public/packs
+Completed 200 OK in 3099ms (Views: 3072.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 20:45:28 -0400
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.5ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4826ms (Views: 4800.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:46:09 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.3ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3282ms (Views: 3256.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:48:32 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+Completed 200 OK in 3158ms (Views: 3133.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:52:26 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.7ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3455ms (Views: 3395.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:53:22 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (4.5ms)
+  Rendered partials/_nav.html.erb (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+error Command "webpack" not found.
+
+Completed 200 OK in 2121ms (Views: 2113.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:53:40 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (3.4ms)
+  Rendered partials/_nav.html.erb (0.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4454ms (Views: 4446.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 20:57:56 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (5.6ms)
+  Rendered partials/_nav.html.erb (0.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5886ms (Views: 5835.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 21:00:53 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4236ms (Views: 4209.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 21:01:39 -0400
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.9ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4311ms (Views: 4281.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for ::1 at 2019-06-05 21:04:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendering accounts/index.html.erb within layouts/application
+  [1m[36mAccount Load (0.1ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (5.1ms)
+  Rendered partials/_nav.html.erb (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5842ms (Views: 5789.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 21:07:48 -0400
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.8ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2019-06-05 21:07:52 -0400
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (2.3ms)
+  Rendered partials/_nav.html.erb (0.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4442ms (Views: 4434.4ms | ActiveRecord: 0.9ms)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3386ms (Views: 3381.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 21:11:17 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (7.5ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6207ms (Views: 6175.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 21:12:20 -0400
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.1ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4543ms (Views: 4521.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 21:13:00 -0400
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (1.6ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3266ms (Views: 3263.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 21:13:28 -0400
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (2.0ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4004ms (Views: 4000.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 21:13:46 -0400
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (3.1ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3345ms (Views: 3322.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 21:14:03 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (7.7ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5149ms (Views: 5116.9ms | ActiveRecord: 1.0ms)
+
+
