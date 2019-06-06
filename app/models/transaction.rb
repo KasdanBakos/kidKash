@@ -20,5 +20,8 @@ class Transaction < ApplicationRecord
 
     # make callback to update balance
     #TODO
+    def update_balance
+        
+    end
 
 end
