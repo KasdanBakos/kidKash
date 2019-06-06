@@ -64,4 +64,11 @@ a:hover {
     color: #FFDC51 !important;
 }
 
+.select-dropdown{
+    display: none
+}
+
+.select-wrapper .caret{
+    display: none
+}
 @import "semantic-ui";

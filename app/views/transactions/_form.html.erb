@@ -1,5 +1,3 @@
-<link href="https://fonts.googleapis.com/css?family=Catamaran%7CQuicksand&display=swap" rel="stylesheet">
-
 <%= simple_form_for(@transaction) do |f| %>
   <%= f.error_notification %>
   <div class="row">
@@ -16,12 +14,14 @@
       <% if current_user != nil && current_user.role == "Child" %>
         <%= f.input :to_account, as: :hidden, input_html: { value: current_user.get_accounts(current_user)[1].id } %>
       <% elsif current_user != nil && current_user.role == "Parent" %>
+
         <%= f.input :to_account, collection: @possible_accounts, include_blank: true %>
+        
       <% end %>
     </div>
   </div>
   <div class="row">
-    <div class="form-actions col s8" id="button">
+    <div class="form-actions col s8">
       <%= f.button :submit %>
     </div>
   </div>
