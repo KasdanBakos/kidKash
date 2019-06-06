@@ -9,35 +9,32 @@
   <% end %>  
 </p>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
-
-
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Role:</strong>
-  <%= @user.role %>
-</p>
-
-
-
-
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="accountWrapper">
+<div class="ui stackable two column grid">
+  <div class="column">
+    <div class="ui segment account" style="min-width: 400px">
+      <div class="account-wrapper">
+        <div class="account-title">Checking Account</div>
+        <div style="text-align: center">
+          <div class="account-balance"><%= @user.get_accounts(@user)[0].balance %></div>
+          <div class="account-line"></div>
+          <%= link_to '<button class="account-button" style="color: white; background-color: #06AED5">View Transactions</button>'.html_safe, transactions_path %>
+          <%= link_to '<button class="account-button" style="color: #DD1C1A; background-color: #FFDC51">Make a Transaction</button>'.html_safe, new_transaction_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui segment account" style="min-width: 400px">
+      <div class="account-wrapper">
+        <div class="account-title">Savings Account</div>
+        <div style="text-align: center">
+          <div class="account-balance"><%= @user.get_accounts(@user)[1].balance %></div>
+          <div class="account-line"></div>
+          <%= link_to '<button class="account-button" style="color: white; background-color: #06AED5">View Transactions</button>'.html_safe, transactions_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

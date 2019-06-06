@@ -16,9 +16,7 @@
       <% if current_user != nil && current_user.role == "Child" %>
         <%= f.input :to_account, as: :hidden, input_html: { value: current_user.get_accounts(current_user)[1].id } %>
       <% elsif current_user != nil && current_user.role == "Parent" %>
-
         <%= f.input :to_account, collection: @possible_accounts, include_blank: true %>
-        
       <% end %>
     </div>
   </div>
