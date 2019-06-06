@@ -12,7 +12,7 @@
   <div class="right item" style="font-size: 20px">
     <a href="/about/index#"><span class="item white">About</span></a>
     <% if logged_in? %>
-      <%= link_to current_user.first_name, "/users/#{current_user.id}",  class:"item white" %>
+      <%= link_to current_user.first_name, "/dashboard",  class:"item white" %>
       <%= link_to "Logout", logout_path,  class:"item white" %>
 
     <% else %>
