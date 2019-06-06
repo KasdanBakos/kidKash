@@ -1,13 +1,13 @@
-<nav>
-  <div class="nav-wrapper">
-    &nbsp&nbsp
-    <a href="/" class="brand-logo"><%= link_to "Home", goals_path %></a>
-    <ul class="right">
-      <% if logged_in? %>
-        <li><%= link_to "Logout", logout_path %></li>
-      <% else %>
-        <li><%= link_to "Login", login_path %></li>
-      <% end %>
-    </ul>
+<div class="ui secondary menu">
+  <div class="item">
+  <a href="/" class="item"><%= link_to "Home", goals_path %></a>
   </div>
-</nav>
+  <div class="right item">
+    <% if logged_in? %>
+      <a class="item" href="#"></a>
+    <% else %>
+      <%= link_to "Login", login_path, class:"item" %>
+    <% end %>
+  </div>
+</div>
+
