@@ -190,3 +190,57 @@ Processing by LandingController#index as HTML
 Completed 200 OK in 5050ms (Views: 5049.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-06-06 00:06:01 -0400
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 114ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-06 00:06:11 -0400
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (36.3ms)
+Completed 200 OK in 161ms (Views: 159.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-06 00:06:43 -0400
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 122ms (Views: 120.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-06 00:07:13 -0400
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 115ms (Views: 113.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-06 00:07:29 -0400
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 5048ms (Views: 5045.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-06 00:10:48 -0400
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 114ms (Views: 112.8ms | ActiveRecord: 0.0ms)
+
+
