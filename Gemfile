@@ -78,7 +78,7 @@ gem 'carrierwave'
 gem 'cancancan'
 
 # added gems
-# gem 'react-rails'
+gem 'react-rails'
 gem 'webpacker'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 

@@ -7030,3 +7030,102 @@ Completed 200 OK in 114ms (Views: 112.8ms | ActiveRecord: 0.0ms)
 =======
 >>>>>>> f083b39e40c5494aff9f17037bd4f360a3e00072
 >>>>>>> d24d8b7fe9fb90b56c31a33207e8aad6a5d84675
+Started GET "/login" for ::1 at 2019-06-06 02:16:00 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (359.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (1.2ms)
+Completed 500  in 605ms (ActiveRecord: 0.7ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/qtx502/Documents/kidKash/app/assets/config
+  /Users/qtx502/Documents/kidKash/app/assets/images
+  /Users/qtx502/Documents/kidKash/app/assets/javascripts
+  /Users/qtx502/Documents/kidKash/app/assets/stylesheets
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/qtx502/Documents/kidKash/node_modules
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/qtx502/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3311624941456327693_70306904729300'
+
+Started POST "/__better_errors/d50b9b908e57d8a8/variables" for ::1 at 2019-06-06 02:16:01 -0400
+Started GET "/login" for ::1 at 2019-06-06 02:16:36 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (371.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 2783ms (Views: 2757.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-06-06 02:16:46 -0400
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500  in 7ms (ActiveRecord: 0.2ms)
+
+
+
+NoMethodError - undefined method `get_accounts' for nil:NilClass:
+  app/controllers/home_controller.rb:16:in `dashboard'
+
+Started POST "/__better_errors/c1fe023b5d22c465/variables" for ::1 at 2019-06-06 02:16:46 -0400
+Started GET "/dashboard" for ::1 at 2019-06-06 02:16:48 -0400
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500  in 4ms (ActiveRecord: 0.2ms)
+
+
+
+NoMethodError - undefined method `get_accounts' for nil:NilClass:
+  app/controllers/home_controller.rb:16:in `dashboard'
+
+Started POST "/__better_errors/11c64e374731135d/variables" for ::1 at 2019-06-06 02:16:48 -0400
+Started GET "/users" for ::1 at 2019-06-06 02:16:56 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 120ms (Views: 117.8ms | ActiveRecord: 0.2ms)
+
+
