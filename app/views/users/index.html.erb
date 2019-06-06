@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<link href="https://fonts.googleapis.com/css?family=Catamaran|Quicksand&display=swap" rel="stylesheet">
 <h1>Users</h1>
 
 <table>
@@ -33,5 +33,36 @@
 </table>
 
 <br>
+
+<div class="accountWrapper">
+<div class="ui stackable two column grid">
+  <div class="column">
+    <div class="ui segment account">
+      <div class="account-wrapper">
+        <div class="account-title">Checking Account</div>
+        <div style="text-align: center">
+          <div class="account-balance">$50.00</div>
+          <div class="account-line"></div>
+          <button class="account-button" style="color: white; background-color: #06AED5">View Transaction</button>
+          <button class="account-button" style="color: #DD1C1A; background-color: #FFDC51">Add $</button>
+          <button class="account-button" style="color: #FFDC51; background-color: #DD1C1A">Remove $</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui segment account">
+      <div class="account-wrapper">
+        <div class="account-title">Savings Account</div>
+        <div style="text-align: center">
+          <div class="account-balance">$50.00</div>
+          <div class="account-line"></div>
+          <button class="account-button" style="color: white; background-color: #06AED5">View Transaction</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 <%= link_to 'New User', new_user_path %>
