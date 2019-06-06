@@ -21,12 +21,10 @@
         <td><%= transaction.amount %></td>
         <td><%= transaction.description %></td>
         <td><%= transaction.trans_type %></td>
-        <td><%= transaction.to_account %></td>
-        <td><%= transaction.from_account %></td>
+        <td><%= link_to "%s - %s" % [transaction.get_account(transaction.to_account)[0].user.name, transaction.get_account(transaction.to_account)[0].name], transaction.get_account(transaction.to_account) %></td>
+        <td><%= link_to "%s - %s" % [transaction.get_account(transaction.from_account)[0].user.name, transaction.get_account(transaction.from_account)[0].name], transaction.get_account(transaction.from_account) %></td>
         <td><%= transaction.date %></td>
         <td><%= link_to 'Show', transaction %></td>
-        <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
-        <td><%= link_to 'Destroy', transaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

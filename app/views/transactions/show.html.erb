@@ -16,13 +16,13 @@
 </p>
 
 <p>
-  <strong>To account:</strong>
-  <%= link_to "%s - %s" % [@transaction.get_account(@transaction.to_account)[0].user.name, @transaction.get_account(@transaction.to_account)[0].name], @transaction.get_account(@transaction.to_account) %>
+  <strong>From account:</strong>
+  <%= link_to "%s - %s" % [@transaction.get_account(@transaction.from_account)[0].user.name, @transaction.get_account(@transaction.from_account)[0].name], @transaction.get_account(@transaction.from_account) %>
 </p>
 
 <p>
-  <strong>From account:</strong>
-  <%= link_to "%s - %s" % [@transaction.get_account(@transaction.from_account)[0].user.name, @transaction.get_account(@transaction.from_account)[0].name], @transaction.get_account(@transaction.from_account) %>
+  <strong>To account:</strong>
+  <%= link_to "%s - %s" % [@transaction.get_account(@transaction.to_account)[0].user.name, @transaction.get_account(@transaction.to_account)[0].name], @transaction.get_account(@transaction.to_account) %>
 </p>
 
 <p>
@@ -30,5 +30,4 @@
   <%= @transaction.date %>
 </p>
 
-<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
 <%= link_to 'Back', transactions_path %>
