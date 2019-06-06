@@ -1,53 +1,29 @@
-<h2>Welcome, <%= current_user.first_name %> <%= current_user.last_name %> </h2>
+<h2 class="parent"><%= current_user.first_name %> <%= current_user.last_name %>&#146;s children </h2>
 
+<link href="https://fonts.googleapis.com/css?family=Catamaran%7CQuicksand&display=swap" rel="stylesheet">
 
-<h3>My Accounts: </h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Checking Account</th>
-      <th>Savings Account</th>
-
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td><%= link_to @my_accounts[0].name, @my_accounts[0] %></td>
-      <td><%= link_to @my_accounts[1].name, @my_accounts[1] %></td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-<h3>Your Children: </h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Checking Account</th>
-      <th>Savings Account</th>
-
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="ui grid">
+    <div class="four column centered row">
     <% for i in (0..(@your_children_accounts.size/2)-1) %>
-      <tr>
-        <td><%= link_to @your_children_accounts[2*i].get_user[0].username, @your_children_accounts[2*i].get_user %></td>
-        <td><%= link_to @your_children_accounts[2*i].name, @your_children_accounts[2*i] %></td>
-        <td><%= link_to @your_children_accounts[(2*i)+1].name, @your_children_accounts[2*i] %></td>
-      </tr>
+      <div class="column">
+          <div><%= image_tag @your_children_accounts[2*i].get_user[0].photo, width:"200", height:"200", :id => "avatar" %></div>
+          <div id="name"><%= @your_children_accounts[2*i].get_user[0].first_name %> <%= @your_children_accounts[2*i].get_user[0].last_name %></div>
+          <br>
+          <div id="checking" class="container">
+              <p id="label">Checking</p>
+              <p id="balance">$<%= @your_children_accounts[2*i].balance %></p>
+          </div>
+          <div id="savings" class="container">
+              <p id="label">Savings</p>
+              <p id="balance">$<%= @your_children_accounts[2*i].balance %></p>
+          </div>
+          <br>
+          <%= link_to '<button class="button" id="view_child_details">View / Modify Details</button>'.html_safe, @your_children_accounts[2*i].get_user %>
+      </div>
     <% end %>
-  </tbody>
-</table>
 
-
-
-
-<li><%= link_to "Add a new Child!", new_user_path %></li>
+    <div class="column" style="padding-top: 225px">
+      <%= link_to "(+) Create Child Account", new_user_path, :id => "create" %>
+    </div>
+    </div>
+</div>
