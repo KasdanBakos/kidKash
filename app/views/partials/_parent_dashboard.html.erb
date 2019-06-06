@@ -1,0 +1,25 @@
+<h3>Welcome, <%= current_user.first_name %> <%= current_user.last_name %> </h3>
+
+
+
+<h5>Your Children: </h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @your_children.each do |child| %>
+      <tr>
+        <td><%= link_to child.first_name, child %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<li><%= link_to "Add a new Child!", new_user_path %></li>

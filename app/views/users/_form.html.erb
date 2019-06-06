@@ -8,11 +8,13 @@
       <%= f.input :email, label_html: { class: 'active' } %>
       <%= f.input :password, label_html: { class: 'active' } %>
       <%= f.input :password_confirmation, label_html: { class: 'active' } %>
-      <%= f.file_field :picture, label_html: { class: 'active' } %>
+      <%= f.file_field :photo, label_html: { class: 'active' } %>
       <% if current_user == nil %>
-        <%= f.input :role, as: :hidden, input_html: { value: "parent" } %>
-      <% elsif current_user != nil && current_user.role == "parent" %>
-        <%= f.input :role, as: :hidden, input_html: { value: "child" } %>
+        <%= f.input :role, as: :hidden, input_html: { value: "Parent" } %>
+        <%= f.input :relative_id, as: :hidden, input_html: { value: nil } %>
+      <% elsif current_user != nil && current_user.role == "Parent" %>
+        <%= f.input :role, as: :hidden, input_html: { value: "Child" } %>
+        <%= f.input :relative_id, as: :hidden, input_html: { value: current_user.id } %>
       <% end %>
     </div>
   </div>

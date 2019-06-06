@@ -1,9 +1,19 @@
 <p id="notice"><%= notice %></p>
 
+
+<p>
+  <% if @user.photo.nil? %>
+    <div id="instructor_image"><%= image_tag 'no_image.jpg', width:"200", height:"200" %></div>
+  <% else %>
+    <div id="instructor_image"><%= image_tag @user.photo, width:"200", height:"200" %></div>
+  <% end %>  
+</p>
+
 <p>
   <strong>Username:</strong>
   <%= @user.username %>
 </p>
+
 
 <p>
   <strong>First name:</strong>
@@ -21,9 +31,13 @@
 </p>
 
 <p>
-  <strong>Photo:</strong>
-  <%= @user.photo %>
+  <strong>Role:</strong>
+  <%= @user.role %>
 </p>
+
+
+
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
