@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  # before_action :check_login, only: [:dashboard]
+  before_action :check_login, only: [:dashboard]
   def index
   end
 

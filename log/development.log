@@ -6803,3 +6803,1115 @@ Completed 200 OK in 124ms (Views: 118.0ms)
 
 
 >>>>>>> f083b39e40c5494aff9f17037bd4f360a3e00072
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20190605173515)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "first_name" varchar, "last_name" varchar, "email" varchar, "photo" varchar, "password_digest" varchar, "role" varchar, "relative_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190605173515"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateAccounts (20190605173620)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "interest_rate" float, "balance" float, "account_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_b1e30bebc8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_accounts_on_user_id" ON "accounts" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190605173620"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTransactions (20190605173834)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" float, "description" varchar, "type" varchar, "to_account" integer, "from_account" integer, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190605173834"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGoals (20190605173930)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "goals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "user_id" integer, "created_at" datetime NOT NULL, "due_at" date, "completed" boolean, "amount" float, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_c5fd9c8a38"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190605173930"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-06 04:10:21.502907"], ["updated_at", "2019-06-06 04:10:21.502907"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_accounts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_accounts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_goals_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_goals_on_user_id' AND type='index'
+[0m
+Started GET "/" for ::1 at 2019-06-06 00:10:33 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (226.6ms)
+Completed 500  in 264ms (ActiveRecord: 0.4ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/landing/index.html.erb:5:in `_app_views_landing_index_html_erb___2935125007444784547_70101546059180'
+
+Started POST "/__better_errors/222c590d576272d4/variables" for ::1 at 2019-06-06 00:10:34 -0400
+Started GET "/" for ::1 at 2019-06-06 00:15:50 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (225.8ms)
+Completed 500  in 268ms (ActiveRecord: 0.4ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/landing/index.html.erb:5:in `_app_views_landing_index_html_erb__3837497351775779665_70221485218120'
+
+Started POST "/__better_errors/a9ef18ba02625347/variables" for ::1 at 2019-06-06 00:15:51 -0400
+Started GET "/" for ::1 at 2019-06-06 00:16:02 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (34.5ms)
+Completed 500  in 62ms (ActiveRecord: 0.9ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/landing/index.html.erb:5:in `_app_views_landing_index_html_erb__3837497351775779665_70221537715060'
+
+Started POST "/__better_errors/ea93087f45a11be4/variables" for ::1 at 2019-06-06 00:16:02 -0400
+Started GET "/" for ::1 at 2019-06-06 00:16:11 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (23.1ms)
+Completed 500  in 42ms (ActiveRecord: 0.3ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/landing/index.html.erb:44:in `_app_views_landing_index_html_erb__3837497351775779665_70221523459840'
+
+Started POST "/__better_errors/561dc69851a8c134/variables" for ::1 at 2019-06-06 00:16:11 -0400
+Started GET "/" for ::1 at 2019-06-06 00:16:20 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (39.7ms)
+Completed 500  in 62ms (ActiveRecord: 0.3ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/landing/index.html.erb:54:in `_app_views_landing_index_html_erb__3837497351775779665_70221532627260'
+
+Started POST "/__better_errors/c98d08859cb99e37/variables" for ::1 at 2019-06-06 00:16:20 -0400
+Started GET "/" for ::1 at 2019-06-06 00:16:30 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (2.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (10.2ms)
+Completed 500  in 26706ms (ActiveRecord: 0.4ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___3344202576541164466_70221534438660'
+
+Started POST "/__better_errors/8886dd946da1d221/variables" for ::1 at 2019-06-06 00:16:57 -0400
+Started GET "/" for ::1 at 2019-06-06 00:17:26 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (34.7ms)
+Completed 500  in 64ms (ActiveRecord: 0.4ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/landing/index.html.erb:5:in `_app_views_landing_index_html_erb__3837497351775779665_70221580009260'
+
+Started POST "/__better_errors/84d8ca33798d6330/variables" for ::1 at 2019-06-06 00:17:26 -0400
+Started GET "/" for ::1 at 2019-06-06 00:22:21 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (211.4ms)
+Completed 500  in 252ms (ActiveRecord: 0.5ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/landing/index.html.erb:5:in `_app_views_landing_index_html_erb__1935754367104786826_70114001658520'
+
+Started POST "/__better_errors/a8892dcf3efc69cd/variables" for ::1 at 2019-06-06 00:22:22 -0400
+Started GET "/" for ::1 at 2019-06-06 00:22:41 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (208.3ms)
+Completed 500  in 247ms (ActiveRecord: 0.7ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/landing/index.html.erb:5:in `_app_views_landing_index_html_erb___2468422745773643025_70359996759500'
+
+Started POST "/__better_errors/95264f6c4d194cae/variables" for ::1 at 2019-06-06 00:22:42 -0400
+Started GET "/users" for ::1 at 2019-06-06 00:24:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (5.6ms)
+Completed 500  in 150ms (ActiveRecord: 0.4ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3537068003979716885_70360032202360'
+
+Started POST "/__better_errors/8b26f0034a335f42/variables" for ::1 at 2019-06-06 00:24:01 -0400
+Started GET "/users" for ::1 at 2019-06-06 00:24:27 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (3.6ms)
+Completed 500  in 1113ms (ActiveRecord: 0.3ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3537068003979716885_70359991542240'
+
+Started POST "/__better_errors/e56d692128529a29/variables" for ::1 at 2019-06-06 00:24:28 -0400
+Started GET "/users" for ::1 at 2019-06-06 00:24:35 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (1.7ms)
+Completed 200 OK in 34ms (Views: 26.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-06-06 00:24:42 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (23.2ms)
+Completed 500  in 43ms (ActiveRecord: 0.8ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'react-server' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Kasdan/Desktop/kidKash/app/assets/config
+  /Users/Kasdan/Desktop/kidKash/app/assets/images
+  /Users/Kasdan/Desktop/kidKash/app/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/bundler/gems/semantic-ui-sass-6c8e8dabb46b/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actioncable-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/actionview-5.1.7/lib/assets/compiled
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Kasdan/Desktop/kidKash/node_modules
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/Kasdan/.rvm/gems/ruby-2.5.1/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/landing/index.html.erb:5:in `_app_views_landing_index_html_erb___2468422745773643025_70360061972620'
+
+Started POST "/__better_errors/7e9f3509872c5efa/variables" for ::1 at 2019-06-06 00:24:42 -0400
+Started GET "/dashboard" for ::1 at 2019-06-06 00:24:54 -0400
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500  in 5ms (ActiveRecord: 0.2ms)
+
+
+
+NoMethodError - undefined method `get_accounts' for nil:NilClass:
+  app/controllers/home_controller.rb:16:in `dashboard'
+
+Started POST "/__better_errors/d54300d3049f5cfc/variables" for ::1 at 2019-06-06 00:24:54 -0400
+Started GET "/dashboard" for ::1 at 2019-06-06 00:24:58 -0400
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500  in 10ms (ActiveRecord: 0.4ms)
+
+
+
+NoMethodError - undefined method `get_accounts' for nil:NilClass:
+  app/controllers/home_controller.rb:16:in `dashboard'
+
+Started POST "/__better_errors/416c34c98e7113a8/variables" for ::1 at 2019-06-06 00:24:58 -0400
+Started POST "/__better_errors/416c34c98e7113a8/variables" for ::1 at 2019-06-06 00:25:04 -0400
+Started GET "/users" for ::1 at 2019-06-06 00:25:23 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (1.3ms)
+Completed 200 OK in 28ms (Views: 13.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-06-06 00:25:24 -0400
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for ::1 at 2019-06-06 00:25:24 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (571.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (1.4ms)
+Completed 200 OK in 594ms (Views: 586.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/transactions" for ::1 at 2019-06-06 00:44:14 -0400
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[36mTransaction Load (0.2ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  Rendered transactions/index.html.erb within layouts/application (8.7ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (3.3ms)
+Completed 200 OK in 54ms (Views: 31.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/transactions/new" for ::1 at 2019-06-06 00:44:17 -0400
+Processing by TransactionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500  in 16ms (ActiveRecord: 0.8ms)
+
+
+
+NoMethodError - undefined method `get_children_accounts' for nil:NilClass:
+  app/controllers/transactions_controller.rb:18:in `new'
+
+Started POST "/__better_errors/629d63bd03f1656a/variables" for ::1 at 2019-06-06 00:44:17 -0400
+Started GET "/login" for ::1 at 2019-06-06 00:44:21 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (1.5ms)
+Completed 200 OK in 21ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-06-06 00:44:26 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z2JDSZRYHT9iL/NDl8FcE7Yu3RL6ACX5z2NUomoS260GQaaFFeFa1+qkYLfuBAhdIoHDkVXM7yOpVtF/aRaOMA==", "username"=>"kas", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kas"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (1.5ms)
+Completed 200 OK in 22ms (Views: 15.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-06-06 00:44:31 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.2ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (8.2ms)
+Completed 200 OK in 41ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-06 00:44:38 -0400
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering users/new.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/_form.html.erb (5.1ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (2.2ms)
+Completed 200 OK in 42ms (Views: 21.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/images/avatar2/large/kristy.png" for ::1 at 2019-06-06 00:44:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/kristy.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2019-06-06 00:44:49 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g/CevQuWJdqcfHjeH55tCLJFDYW+/QViAeUnZ+kKVnxllpq1GVPqELhA8xkRfUBDu1kt5NGc6scitb81LV3DNw==", "user"=>{"first_name"=>"kas", "last_name"=>"bak", "username"=>"kas", "email"=>"k@b", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"", "relative_id"=>""}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "first_name", "last_name", "email", "password_digest", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "kas"], ["first_name", "kas"], ["last_name", "bak"], ["email", "k@b"], ["password_digest", "$2a$12$TsrnZAv.ToTarg4sT2kvRuGrPTZNs6nNAhfBFkLJOhcDM1S73jTHO"], ["role", ""], ["created_at", "2019-06-06 04:44:50.040325"], ["updated_at", "2019-06-06 04:44:50.040325"]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "accounts" ("user_id", "name", "interest_rate", "balance", "account_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Default Checking Account"], ["interest_rate", 0.0], ["balance", 0.0], ["account_type", "checking"], ["created_at", "2019-06-06 04:44:50.063220"], ["updated_at", "2019-06-06 04:44:50.063220"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "accounts" ("user_id", "name", "interest_rate", "balance", "account_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Default Savings Account"], ["interest_rate", 5.0], ["balance", 0.0], ["account_type", "savings"], ["created_at", "2019-06-06 04:44:50.066365"], ["updated_at", "2019-06-06 04:44:50.066365"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 291ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-06 00:44:50 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (2.7ms)
+Completed 200 OK in 34ms (Views: 13.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2019-06-06 00:44:56 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (5.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (2.1ms)
+Completed 200 OK in 25ms (Views: 18.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for ::1 at 2019-06-06 00:45:02 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1EVtQG6aT3Eil6VZdOf3Jt0bcCdVtx3sGNcnBadNjcq1ZoiM7yMImaocNq0NIqNoSbRupPp71zZ+4qLYpEnYVw==", "username"=>"kas", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kas"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-06 00:45:02 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (2.1ms)
+Completed 200 OK in 29ms (Views: 13.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-06-06 00:45:04 -0400
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered home/dashboard.html.erb within layouts/application (4.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (1.5ms)
+Completed 200 OK in 35ms (Views: 18.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/transactions" for ::1 at 2019-06-06 00:45:25 -0400
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[36mTransaction Load (0.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  Rendered transactions/index.html.erb within layouts/application (3.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (6.2ms)
+Completed 200 OK in 43ms (Views: 30.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/transactions/new" for ::1 at 2019-06-06 00:45:26 -0400
+Processing by TransactionsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500  in 14ms (ActiveRecord: 1.7ms)
+
+
+
+NoMethodError - undefined method `map' for nil:NilClass:
+  app/models/user.rb:15:in `get_children_accounts'
+  app/controllers/transactions_controller.rb:18:in `new'
+
+Started POST "/__better_errors/9c52992599e4fd10/variables" for ::1 at 2019-06-06 00:45:26 -0400
+Started GET "/transactions/new" for ::1 at 2019-06-06 00:45:34 -0400
+Processing by TransactionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500  in 12ms (ActiveRecord: 0.5ms)
+
+
+
+NoMethodError - undefined method `map' for nil:NilClass:
+  app/models/user.rb:15:in `get_children_accounts'
+  app/controllers/transactions_controller.rb:18:in `new'
+
+Started POST "/__better_errors/431355e39fbc6d12/variables" for ::1 at 2019-06-06 00:45:34 -0400
+Started GET "/transactions/new" for ::1 at 2019-06-06 00:46:14 -0400
+Processing by TransactionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500  in 45ms (ActiveRecord: 2.5ms)
+
+
+
+NoMethodError - undefined method `map' for nil:NilClass:
+  app/models/user.rb:16:in `get_children_accounts'
+  app/controllers/transactions_controller.rb:18:in `new'
+
+Started POST "/__better_errors/fd25f817afde71c1/variables" for ::1 at 2019-06-06 00:46:14 -0400
+Started GET "/transactions/new" for ::1 at 2019-06-06 00:46:27 -0400
+Processing by TransactionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered transactions/_form.html.erb (115.3ms)
+  Rendered transactions/new.html.erb within layouts/application (118.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (2.1ms)
+Completed 200 OK in 214ms (Views: 142.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users" for ::1 at 2019-06-06 00:49:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (22.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (2.9ms)
+Completed 200 OK in 70ms (Views: 48.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-06 00:49:04 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (6.5ms)
+Completed 200 OK in 49ms (Views: 27.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-06 00:53:47 -0400
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering users/new.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/_form.html.erb (5.9ms)
+  Rendered users/new.html.erb within layouts/application (9.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (2.0ms)
+Completed 200 OK in 37ms (Views: 25.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images/avatar2/large/kristy.png" for ::1 at 2019-06-06 00:53:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/kristy.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2019-06-06 00:54:00 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4QPDoO8afRM5a+oqopKWRGO2p0+Yzr3ytmiZ8gJgBGoHZceo/d+y2R1XYe2scbsPaqqHLvevUleVOAGgxjeRIQ==", "user"=>{"first_name"=>"seb", "last_name"=>"bak", "username"=>"seb", "email"=>"s@b", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["username", "seb"], ["first_name", "seb"], ["last_name", "bak"], ["email", "s@b"], ["password_digest", "$2a$12$cb3Nnr2/XPYyBdT19965/eHyTCwMnWBBkYeSJkeJCppf42WWaiiSy"], ["created_at", "2019-06-06 04:54:01.027750"], ["updated_at", "2019-06-06 04:54:01.027750"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "accounts" ("user_id", "name", "interest_rate", "balance", "account_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["name", "Default Checking Account"], ["interest_rate", 0.0], ["balance", 0.0], ["account_type", "checking"], ["created_at", "2019-06-06 04:54:01.032423"], ["updated_at", "2019-06-06 04:54:01.032423"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "accounts" ("user_id", "name", "interest_rate", "balance", "account_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["name", "Default Savings Account"], ["interest_rate", 5.0], ["balance", 0.0], ["account_type", "savings"], ["created_at", "2019-06-06 04:54:01.037183"], ["updated_at", "2019-06-06 04:54:01.037183"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 282ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/2" for ::1 at 2019-06-06 00:54:01 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (2.6ms)
+Completed 200 OK in 28ms (Views: 17.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-06-06 00:54:03 -0400
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered home/dashboard.html.erb within layouts/application (7.8ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (4.0ms)
+Completed 200 OK in 52ms (Views: 31.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users" for ::1 at 2019-06-06 00:54:05 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.2ms)
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (6.5ms)
+Completed 200 OK in 60ms (Views: 43.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-06-06 00:54:07 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered partials/_nav.html.erb (1.9ms)
+Completed 200 OK in 36ms (Views: 15.0ms | ActiveRecord: 1.4ms)
+
+

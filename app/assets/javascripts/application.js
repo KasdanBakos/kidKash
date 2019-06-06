@@ -15,8 +15,6 @@
 //= require materialize-sprockets
 //= require materialize-form
 //= require vue
-//= require react
-//= require react_ujs
 //= require components
 //= require_tree .
 //= require semantic-ui

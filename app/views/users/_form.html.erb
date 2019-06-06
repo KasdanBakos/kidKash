@@ -30,11 +30,11 @@
         </div>
       </div>
       <% if current_user == nil %>
-        <%= f.hidden_field :role, as: :hidden, input_html: { value: "Parent" } %>
-        <%= f.hidden_field :relative_id, as: :hidden, input_html: { value: nil } %>
+        <%= f.input :role, as: :hidden, input_html: { value: "Parent" } %>
+        <%= f.input :relative_id, as: :hidden, input_html: { value: nil } %>
       <% elsif current_user != nil && current_user.role == "Parent" %>
-        <%= f.hidden_field :role, as: :hidden, input_html: { value: "Child" } %>
-        <%= f.hidden_field :relative_id, as: :hidden, input_html: { value: current_user.id } %>
+        <%= f.input :role, as: :hidden, input_html: { value: "Child" } %>
+        <%= f.input :relative_id, as: :hidden, input_html: { value: current_user.id } %>
       <% end %>
   <div class="row">
     <div class="form-actions col s8">
