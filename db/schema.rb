@@ -39,13 +39,11 @@ ActiveRecord::Schema.define(version: 20190605173930) do
     t.float "amount"
     t.string "description"
     t.string "type"
-    t.integer "to_account_id"
-    t.integer "from_account_id"
+    t.integer "to_account"
+    t.integer "from_account"
     t.datetime "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["from_account_id"], name: "index_transactions_on_from_account_id"
-    t.index ["to_account_id"], name: "index_transactions_on_to_account_id"
   end
 
   create_table "users", force: :cascade do |t|

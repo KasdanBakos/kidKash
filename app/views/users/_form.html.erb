@@ -1,26 +1,44 @@
-<%= simple_form_for(@user) do |f| %>
-  <%= f.error_notification %>
-  <div class="row">
-    <div class="form-inputs">
-      <%= f.input :username, label_html: { class: 'active' } %>
-      <%= f.input :first_name, label_html: { class: 'active' } %>
-      <%= f.input :last_name, label_html: { class: 'active' } %>
-      <%= f.input :email, label_html: { class: 'active' } %>
-      <%= f.input :password, label_html: { class: 'active' } %>
-      <%= f.input :password_confirmation, label_html: { class: 'active' } %>
-      <%= f.file_field :photo, label_html: { class: 'active' } %>
+<%= form_for @user,   :html => {:class => "ui form"} do |f| %>
+      <div class="two fields">
+        <div class="field">
+          <label>First Name</label>
+          <%= f.text_field :first_name %>
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <%= f.text_field :last_name, label_html: { class: 'active' } %>
+        </div>
+      </div>
+      <div class="two fields">
+        <div class="field">
+          <label>Username</label>
+          <%= f.text_field :username %>
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <%= f.text_field :email, label_html: { class: 'active' } %>
+        </div>
+      </div>
+      <div class="two fields">
+        <div class="field">
+          <label>Password</label>
+          <%= f.password_field :password, label_html: { class: 'active' } %>
+        </div>
+        <div class="field">
+          <label>Confirm Password</label>
+          <%= f.password_field :password_confirmation, label_html: { class: 'active' } %>
+        </div>
+      </div>
       <% if current_user == nil %>
-        <%= f.input :role, as: :hidden, input_html: { value: "Parent" } %>
-        <%= f.input :relative_id, as: :hidden, input_html: { value: nil } %>
+        <%= f.hidden_field :role, as: :hidden, input_html: { value: "Parent" } %>
+        <%= f.hidden_field :relative_id, as: :hidden, input_html: { value: nil } %>
       <% elsif current_user != nil && current_user.role == "Parent" %>
-        <%= f.input :role, as: :hidden, input_html: { value: "Child" } %>
-        <%= f.input :relative_id, as: :hidden, input_html: { value: current_user.id } %>
+        <%= f.hidden_field :role, as: :hidden, input_html: { value: "Child" } %>
+        <%= f.hidden_field :relative_id, as: :hidden, input_html: { value: current_user.id } %>
       <% end %>
-    </div>
-  </div>
   <div class="row">
     <div class="form-actions col s8">
-      <%= f.button :submit %>
+      <%= f.button :submit, class: "ui button" %>
     </div>
   </div>
 <% end %>

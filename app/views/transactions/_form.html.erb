@@ -1,47 +1,27 @@
-<%= form_with(model: transaction, local: true) do |form| %>
-  <% if transaction.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+<%= simple_form_for(@transaction) do |f| %>
+  <%= f.error_notification %>
+  <div class="row">
+    <div class="form-inputs">
+      <%= f.input :amount, label_html: { class: 'active' } %>
+      <%= f.input :description, label_html: { class: 'active' } %>
+      <%= f.input :date, as: :hidden, input_html: { value: Time.now } %>
+      
 
-      <ul>
-      <% transaction.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+      <!-- NEED TO PASS IN WHAT FROM ACCOUNT IS IN THE PREVIOUS PAGE/CLICK -->
+      <!-- 0 is checking / 1 is savings -->
+      <!-- THIS IS FOR CHECKING TO SAVINGS -->
+      <%= f.input :from_account, as: :hidden, input_html: { value: current_user.get_accounts(current_user)[0].id } %>
+      <% if current_user != nil && current_user.role == "Child" %>
+        <%= f.input :to_account, as: :hidden, input_html: { value: current_user.get_accounts(current_user)[1].id } %>
+      <% elsif current_user != nil && current_user.role == "Parent" %>
+        <%= f.collection_select :to_account, @possible_accounts, :id, :name %>
+        
       <% end %>
-      </ul>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :amount %>
-    <%= form.text_field :amount, id: :transaction_amount %>
   </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description, id: :transaction_description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :type %>
-    <%= form.text_field :type, id: :transaction_type %>
-  </div>
-
-  <div class="field">
-    <%= form.label :to_account_id %>
-    <%= form.text_field :to_account_id, id: :transaction_to_account_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :from_account_id %>
-    <%= form.text_field :from_account_id, id: :transaction_from_account_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.datetime_select :date, id: :transaction_date %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="row">
+    <div class="form-actions col s8">
+      <%= f.button :submit %>
+    </div>
   </div>
 <% end %>

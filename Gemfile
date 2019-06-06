@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'yarn'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -76,7 +78,7 @@ gem 'carrierwave'
 gem 'cancancan'
 
 # added gems
-gem 'react-rails'
+# gem 'react-rails'
 gem 'webpacker'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 

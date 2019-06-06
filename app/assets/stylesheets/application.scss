@@ -16,6 +16,11 @@
 
  @import "semantic-ui";
 
+.main{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .secondary{
     background-color: rgb(9, 174, 213)!important;
 }
@@ -31,4 +36,6 @@
         text-decoration: none;
         color: white;
     }
+    padding-left: 8%;
+    padding-right: 8%;
 }
