@@ -3819,3 +3819,2052 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/goals" for ::1 at 2019-06-05 21:44:17 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/wvq612/Desktop/kidKash/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (5343.4ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 18506ms (Views: 18487.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/parent_view" for ::1 at 2019-06-05 21:47:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view" for ::1 at 2019-06-05 21:49:08 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 21:49:45 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.9ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+Completed 200 OK in 7938ms (Views: 7935.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/goals" for ::1 at 2019-06-05 21:55:27 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/wvq612/Desktop/kidKash/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (3571.6ms)
+  Rendered partials/_nav.html.erb (0.6ms)
+Completed 200 OK in 3755ms (Views: 3745.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 21:55:44 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.2ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 148ms (Views: 146.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 21:55:53 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:00:05 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:00:29 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:00:53 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:01:19 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 103.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/avatar2/large/matthew.png" for ::1 at 2019-06-05 22:01:19 -0400
+Started GET "/images/avatar2/large/elyse.png" for ::1 at 2019-06-05 22:01:19 -0400
+Started GET "/images/avatar2/large/molly.png" for ::1 at 2019-06-05 22:01:19 -0400
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/matthew.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/molly.png"):
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/elyse.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:02:13 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 115ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/avatar2/large/matthew.png" for ::1 at 2019-06-05 22:02:13 -0400
+Started GET "/images/avatar2/large/molly.png" for ::1 at 2019-06-05 22:02:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/matthew.png"):
+  
+  
+Started GET "/images/avatar2/large/elyse.png" for ::1 at 2019-06-05 22:02:13 -0400
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/molly.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/elyse.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:03:10 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 151ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/avatar2/large/molly.png" for ::1 at 2019-06-05 22:03:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/molly.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:03:13 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/avatar2/large/molly.png" for ::1 at 2019-06-05 22:03:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/molly.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:03:36 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 98.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/avatar2/large/molly.png" for ::1 at 2019-06-05 22:03:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/molly.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:03:49 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 97ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/avatar2/large/molly.png" for ::1 at 2019-06-05 22:03:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/large/molly.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:04:03 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:04:13 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:04:47 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:07:32 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4942ms (Views: 4940.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:07:55 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 106ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:08:05 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 136ms (Views: 135.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:08:28 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4708ms (Views: 4706.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:09:21 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5053ms (Views: 5051.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:09:40 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 5006ms (Views: 5004.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:10:44 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4967ms (Views: 4966.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:10:56 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4680ms (Views: 4678.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:12:54 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 125ms (Views: 123.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:13:24 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 4674ms (Views: 4672.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:14:59 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 141ms (Views: 139.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:15:04 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:16:51 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4726ms (Views: 4724.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:17:15 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+Completed 200 OK in 4639ms (Views: 4637.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:18:29 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4859ms (Views: 4858.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:18:37 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 159ms (Views: 157.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:20:09 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4852ms (Views: 4851.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:20:36 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4408ms (Views: 4406.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:21:15 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4647ms (Views: 4645.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:21:33 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 4999ms (Views: 4997.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:22:07 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 5263ms (Views: 5261.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:24:49 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5196ms (Views: 5194.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:25:48 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:26:52 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5011ms (Views: 5010.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:27:48 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 5342ms (Views: 5340.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:28:30 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5103ms (Views: 5101.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:29:02 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5018ms (Views: 5016.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:29:21 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.2ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 4967ms (Views: 4966.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:29:37 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:29:46 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5009ms (Views: 5007.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:31:05 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 169ms (Views: 167.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:31:06 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:31:15 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5049ms (Views: 5047.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:31:47 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5037ms (Views: 5035.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:32:47 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5297ms (Views: 5295.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:33:43 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5398ms (Views: 5396.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:34:50 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5498ms (Views: 5496.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:35:05 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5299ms (Views: 5297.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:35:23 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5246ms (Views: 5244.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:40:02 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5075ms (Views: 5073.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:40:15 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5335ms (Views: 5334.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:40:42 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5270ms (Views: 5268.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:41:19 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:41:54 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5224ms (Views: 5222.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:43:52 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5110ms (Views: 5108.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:45:05 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5202ms (Views: 5200.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:45:42 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:45:51 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5203ms (Views: 5201.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:48:28 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5433ms (Views: 5431.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:50:21 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5134ms (Views: 5133.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:51:29 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:55:42 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5059ms (Views: 5057.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:56:19 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 96.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:56:21 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.4ms)
+  Rendered partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:56:43 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 22:56:55 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 101.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:06:27 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5584ms (Views: 5582.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/app/assets/images/add_child.png" for ::1 at 2019-06-05 23:06:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/app/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:06:38 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 100.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/app/assets/images/add_child.png" for ::1 at 2019-06-05 23:06:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/app/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:08:10 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5192ms (Views: 5191.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/app/assets/images/add_child.png" for ::1 at 2019-06-05 23:08:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/app/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:08:47 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5051ms (Views: 5049.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/app/assets/images/add_child.png" for ::1 at 2019-06-05 23:08:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/app/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:09:05 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/app/assets/images/add_child.png" for ::1 at 2019-06-05 23:09:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/app/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:09:10 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/app/assets/images/add_child.png" for ::1 at 2019-06-05 23:09:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/app/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:09:33 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5286ms (Views: 5284.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/app/assets/images/add_child.png" for ::1 at 2019-06-05 23:09:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/app/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:10:54 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 175ms (Views: 174.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/.../images/add_child.png" for ::1 at 2019-06-05 23:10:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/.../images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:10:58 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/..../images/add_child.png" for ::1 at 2019-06-05 23:10:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/..../images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:11:16 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 104ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/...../images/add_child.png" for ::1 at 2019-06-05 23:11:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/...../images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:13:28 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.7) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.7) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.7) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.7) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:13:30 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 98.9ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.7) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.7) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.7) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.7) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:13:34 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/.../assets/images/add_child.png" for ::1 at 2019-06-05 23:13:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/.../assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:14:35 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/.../assets/images/add_child.png" for ::1 at 2019-06-05 23:14:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/.../assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:14:44 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 98.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/.../assets/images/add_child.png" for ::1 at 2019-06-05 23:14:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/.../assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:14:56 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 108ms (Views: 106.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/.../assets/images/add_child.png" for ::1 at 2019-06-05 23:14:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/parent_view/.../assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:17:01 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.2ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5175ms (Views: 5173.6ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.7) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.7) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.7) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.7) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:17:23 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 97.8ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.7) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.7) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.7) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.7) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:18:00 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/add_child.png"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.7) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.7) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.7) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.7) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:18:16 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 97ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:20:50 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 123ms (Views: 122.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:21:42 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:23:35 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5303ms (Views: 5301.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:23:46 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:26:12 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 107ms (Views: 105.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:26:15 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 147ms (Views: 146.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:27:29 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 108ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:27:42 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:28:54 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:30:17 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5341ms (Views: 5339.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:31:10 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5137ms (Views: 5135.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:32:08 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 98.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:32:09 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 173ms (Views: 172.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:32:29 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 104ms (Views: 103.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:32:44 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:34:04 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 131ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:35:42 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 137ms (Views: 136.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:37:15 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 209ms (Views: 207.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:37:17 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:37:23 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:39:06 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5230ms (Views: 5229.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:40:36 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 5256ms (Views: 5254.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:40:55 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.4ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parent_view/index" for ::1 at 2019-06-05 23:40:56 -0400
+Processing by ParentViewController#index as HTML
+  Rendering parent_view/index.html.erb within layouts/application
+  Rendered parent_view/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+

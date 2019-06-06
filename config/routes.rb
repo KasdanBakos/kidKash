@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'parent_view/index'
+
   # get 'sessions/new'
 
   get    '/login',   to: 'sessions#new', as: :login
