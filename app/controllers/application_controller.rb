@@ -5,7 +5,9 @@ class ApplicationController < ActionController::Base
   private
   # Handling authentication
   def current_user
-    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    if(User.all != [])
+      @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    end
   end
   helper_method :current_user
   
@@ -21,6 +23,8 @@ class ApplicationController < ActionController::Base
   before_action :set_current_user
 
   def set_current_user
-    User.current_user = current_user
+    if current_user != nil
+      User.current_user = current_user
+    end
   end
 end

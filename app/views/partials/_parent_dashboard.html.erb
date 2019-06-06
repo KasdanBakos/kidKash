@@ -1,13 +1,37 @@
-<h3>Welcome, <%= current_user.first_name %> <%= current_user.last_name %> </h3>
+<h2>Welcome, <%= current_user.first_name %> <%= current_user.last_name %> </h2>
+
+
+<h3>My Accounts: </h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Checking Account</th>
+      <th>Savings Account</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= link_to @my_accounts[0].name, @my_accounts[0] %></td>
+      <td><%= link_to @my_accounts[1].name, @my_accounts[1] %></td>
+    </tr>
+  </tbody>
+</table>
 
 
 
-<h5>Your Children: </h5>
+<h3>Your Children: </h3>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
+      <th>Checking Account</th>
+      <th>Savings Account</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +40,14 @@
     <% @your_children.each do |child| %>
       <tr>
         <td><%= link_to child.first_name, child %></td>
+        <td><%= link_to child.get_accounts(child)[0].name, child.get_accounts(child)[0] %></td>
+        <td><%= link_to child.get_accounts(child)[1].name, child.get_accounts(child)[1] %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+
 
 
 <li><%= link_to "Add a new Child!", new_user_path %></li>
