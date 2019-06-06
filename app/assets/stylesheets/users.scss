@@ -50,10 +50,37 @@
 }
 
 .account-line {
-    width: 416px;
+    width: 350px;
     height: 0px;
     border: 1px solid #086788;
     margin: auto;
     margin-top: -20px;
     margin-bottom: 20px;
+}
+
+.account-reminder {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 45px;
+    text-align: center;
+    color: #DD1C1A; 
+}
+
+.account-knowledge-title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 60px;
+    color: #086788;
+}
+
+.account-knowledge-body {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 32px;
+    color: #086788;
 }
