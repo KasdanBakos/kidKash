@@ -1,0 +1,22 @@
+// Place all the styles related to the Landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "semantic-ui";
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Quicksand&display=swap');
+
+.header {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    color: #086788;
+}
+
+.description p {
+    font-family:'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.landing-view {
+    height: 50vh;
+    margin: 45px 0;
+    padding: 45px 0;
+}
