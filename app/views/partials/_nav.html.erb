@@ -11,6 +11,7 @@
   </div>
   <div class="right item" style="font-size: 20px">
     <% if logged_in? %>
+      <%= link_to current_user.first_name, "/users/#{current_user.id}",  class:"item white" %>
       <%= link_to "Logout", logout_path,  class:"item white" %>
 
     <% else %>
