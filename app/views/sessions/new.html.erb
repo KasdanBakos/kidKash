@@ -1,27 +1,25 @@
-<div class="row">
-  <div class="col s7">
-    <div class="card yellow lighten-4">
-      <div class="card-content">
-        <span class="card-title">Login here</span>
-          <br />
-          <%= form_with url: login_path, local: true do |f| %>
-          <div class="control-group">
-            <%= f.label :username %>
-            <div class="controls">
-              <%= f.text_field :username %>
-            </div>
-          </div>
+<div class="ui grid">
+  <div class="twelve wide column">
+    <img class="ui centered big image" src="images/Landing.png">
+    <h1 class="ui center aligned header">Ask your kids, what's in their wallet?</h1>
+  </div>
+  <div class="four wide column">
+    <div class="ui raised segment">
 
-          <div class="control-group">
-            <%= f.label :password %>
-            <div class="controls">
-              <%= f.password_field :password %>
-            </div>
-          </div>
-          
-          <div class="actions"><%= f.submit "Log In" %></div>
-        <% end %>
-      </div>
+      <%= form_with url: login_path, :html => {:class => "ui form"},  local: true do |f| %>
+        <div class="field">
+          <%= f.label :username %>
+            <%= f.text_field :username %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password %>
+            <%= f.password_field :password %>
+        </div>
+        
+        <div class="actions"><%= f.submit "Log In", class:"ui button" %></div>
+      <% end %>
+      Not a member? <%= link_to 'Sign up', @users %>  today! 
     </div>
   </div>
 </div>
