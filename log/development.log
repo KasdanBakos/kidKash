@@ -1,0 +1,20 @@
+Started GET "/" for ::1 at 2019-06-05 23:06:58 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/qtx502/Documents/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (3168.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 11136ms (Views: 11115.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-05 23:07:12 -0400
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (2.3ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 124ms (Views: 118.0ms)
+
+
