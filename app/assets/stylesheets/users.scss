@@ -1,3 +1,59 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.accountWrapper {
+    max-width: 1800px;
+}
+
+.account {
+    height: 500px;
+}
+
+.account-wrapper {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.account-title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 60px;
+    color: #086788;
+}
+
+.account-balance {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 68px;
+    line-height: 120px;
+
+    color: #06AED5;
+}
+
+.account-button {
+    width: 350px;
+    height: 50px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 45px;
+    margin: 10px;
+}
+
+.account-line {
+    width: 416px;
+    height: 0px;
+    border: 1px solid #086788;
+    margin: auto;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
