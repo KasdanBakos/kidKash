@@ -21,6 +21,9 @@ class User < ApplicationRecord
         end
     end
 
+    def name
+        self.first_name + " " +  self.last_name
+    end
 
     after_create :create_accounts
 

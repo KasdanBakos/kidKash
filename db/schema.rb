@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20190605173930) do
   create_table "transactions", force: :cascade do |t|
     t.float "amount"
     t.string "description"
-    t.string "type"
+    t.string "trans_type"
     t.integer "to_account"
     t.integer "from_account"
     t.datetime "date"
