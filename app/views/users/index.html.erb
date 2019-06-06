@@ -34,6 +34,38 @@
 
 <br>
 
+# transaction history page
+<div>
+  <div class="ui two column grid" style="padding: 10px">
+    <div class="column">
+      <div class="transaction-title">Rich Fairbank | Savings Account</div>
+    </div>
+    <div class="column" style="text-align: right; padding: 10px">
+      <span class="transaction-interest" style="color: black">Current Interest: </span><span class="transaction-interest" style="font-weight: bold">10% </span>
+    </div>
+  </div>
+  <table style="width: 100%; border-collapse: collapse">
+  <thead>
+    <tr>
+      <th class="transaction-header">Date</th>
+      <th class="transaction-header">Description</th>
+      <th class="transaction-header">Amount</th>
+      <th class="transaction-header">Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    # <% @users.each do |user| %>
+      <tr>
+        <td class="transaction-cell"><%= user.username %></td>
+        <td class="transaction-cell"><%= user.first_name %></td>
+        <td class="transaction-cell"><%= user.last_name %></td>
+        <td class="transaction-cell"><%= user.email %></td>
+      </tr>
+    # <% end %>
+  </tbody>
+</table>
+</div>
+
 # parent viewing child's account tiles
 
 <div class="accountWrapper">
