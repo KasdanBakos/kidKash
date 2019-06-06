@@ -1,5 +1,7 @@
 <h1>New User</h1>
 
 <%= render 'form', user: @user %>
+<%= react_component('SelectAvatar') %>
+<%= javascript_pack_tag 'new_user' %>
 
 <%= link_to 'Back', users_path %>
