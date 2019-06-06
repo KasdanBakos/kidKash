@@ -3,6 +3,7 @@ class Transaction < ApplicationRecord
     validates :amount, numericality: { other_than: 0 }
   
     after_create :set_transaction_type
+    after_create :update_balance
 
     # make callback to set transaction type
     def set_transaction_type
@@ -21,7 +22,11 @@ class Transaction < ApplicationRecord
     # make callback to update balance
     #TODO
     def update_balance
-        
+        account_from = self.get_account(self.from_account)
+        account_to = self.get_account(self.to_account)
+
+        account_to[0].update_attribute(:balance, account_to[0].balance + self.amount)
+        account_from[0].update_attribute(:balance, account_from[0].balance - self.amount)
     end
 
 end

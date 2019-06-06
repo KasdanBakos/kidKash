@@ -1,3 +1,58 @@
 // Place all the styles related to the Transactions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+    font-family: Quicksand !important;
+    color: #06AED5;
+    margin-top: 50px;
+}
+
+.row {
+    font-family: Quicksand;
+    font-size: 20px;
+    color: #086788;
+    margin: 30px 0px;
+}
+
+.form-inputs .input {
+    margin: 20px 0px;
+}
+
+.form-inputs .input input {
+    font-family: Quicksand;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #06AED5;
+}
+
+#transaction_to_account {
+    font-family: Quicksand;
+    font-size: 20px;
+    color: #06AED5;
+}
+
+.button {
+    background-color: #06AED5;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Quicksand;
+}
+
+.error_notification {
+    color: #DD1C1A;
+    font-style: italic;
+    font-family: Quicksand;
+}
+
+.field_with_errors {
+    background-color: white !important;
+    color: #DD1C1A;
+    border: 1px solid #DD1C1A;
+    border-radius: 5px;
+}
+
+a {
+    font-family: Quicksand;
+}
