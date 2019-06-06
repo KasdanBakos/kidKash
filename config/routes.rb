@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about/index'
+
   get 'parent_view/index'
 
   # get 'sessions/new'
