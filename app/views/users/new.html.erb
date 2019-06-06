@@ -1,7 +1,6 @@
 <h1>New User</h1>
 
-<%= render 'form', user: @user %>
-<%= react_component('SelectAvatar') %>
-<%= javascript_pack_tag 'new_user' %>
+
+<%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
 
 <%= link_to 'Back', users_path %>

@@ -2772,3 +2772,658 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/new" for ::1 at 2019-06-05 18:14:03 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (544.1ms)
+  Rendered users/new.html.erb within layouts/application (665.3ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 3303ms (Views: 3278.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:14:16 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.2ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 147ms (Views: 144.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:14:17 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 67.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:18:44 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (14.1ms)
+  Rendered partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 80.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:19:50 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:19:51 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 67.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:19:54 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+  Rendered partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 83ms (Views: 61.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:20:15 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (4674.4ms)
+Completed 200 OK in 4813ms (Views: 4811.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:20:52 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+  Rendered partials/_nav.html.erb (5.8ms)
+Completed 200 OK in 104ms (Views: 102.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:20:54 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+  Rendered partials/_nav.html.erb (5.6ms)
+Completed 200 OK in 105ms (Views: 103.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:21:19 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (11.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (4346.3ms)
+Completed 200 OK in 4467ms (Views: 4463.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 18:23:02 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+  Rendered partials/_nav.html.erb (14.1ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/goals" for ::1 at 2019-06-05 18:31:19 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (15.6ms)
+  Rendered partials/_nav.html.erb (5.2ms)
+Completed 200 OK in 156ms (Views: 112.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/goals" for ::1 at 2019-06-05 19:02:42 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (4318.6ms)
+  Rendered partials/_nav.html.erb (5.2ms)
+Completed 200 OK in 4514ms (Views: 4512.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/goals" for ::1 at 2019-06-05 19:04:08 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (7.0ms)
+  Rendered partials/_nav.html.erb (5.8ms)
+Completed 200 OK in 111ms (Views: 109.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/goals" for ::1 at 2019-06-05 19:04:34 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  Rendered goals/index.html.erb within layouts/application (6.5ms)
+  Rendered partials/_nav.html.erb (5.4ms)
+Completed 200 OK in 105ms (Views: 103.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/goals" for ::1 at 2019-06-05 19:05:47 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (4195.9ms)
+  Rendered partials/_nav.html.erb (9.1ms)
+Completed 200 OK in 4412ms (Views: 4409.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/goals" for ::1 at 2019-06-05 19:09:06 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (1.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (4553.3ms)
+  Rendered partials/_nav.html.erb (6.5ms)
+Completed 200 OK in 4672ms (Views: 4668.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/goals" for ::1 at 2019-06-05 19:09:44 -0400
+Processing by GoalsController#index as HTML
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered goals/index.html.erb within layouts/application (3606.9ms)
+  Rendered partials/_nav.html.erb (6.3ms)
+Completed 200 OK in 3747ms (Views: 3745.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-05 19:11:44 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (11.4ms)
+  Rendered partials/_nav.html.erb (12.4ms)
+Completed 200 OK in 106ms (Views: 101.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:11:46 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (9.8ms)
+  Rendered users/new.html.erb within layouts/application (16.0ms)
+  Rendered partials/_nav.html.erb (5.1ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:18:09 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (9.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered users/new.html.erb within layouts/application (4518.1ms)
+  Rendered partials/_nav.html.erb (5.9ms)
+Completed 200 OK in 4663ms (Views: 4625.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:34:49 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (10.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered users/new.html.erb within layouts/application (4845.4ms)
+  Rendered partials/_nav.html.erb (5.8ms)
+Completed 200 OK in 5023ms (Views: 5008.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:35:08 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (10.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered users/new.html.erb within layouts/application (3658.9ms)
+  Rendered partials/_nav.html.erb (6.3ms)
+Completed 200 OK in 3769ms (Views: 3750.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:37:54 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (45.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered users/new.html.erb within layouts/application (3537.2ms)
+  Rendered partials/_nav.html.erb (6.7ms)
+Completed 200 OK in 3649ms (Views: 3635.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:38:36 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.7ms)
+  Rendered partials/_nav.html.erb (5.2ms)
+Completed 200 OK in 86ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:39:05 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.2ms)
+  Rendered partials/_nav.html.erb (5.3ms)
+Completed 200 OK in 113ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:39:06 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (10.3ms)
+  Rendered partials/_nav.html.erb (5.0ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:39:53 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.1ms)
+  Rendered partials/_nav.html.erb (5.0ms)
+Completed 200 OK in 103ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:40:05 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (10.6ms)
+  Rendered partials/_nav.html.erb (5.0ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:40:07 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (10.4ms)
+  Rendered partials/_nav.html.erb (4.8ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:40:12 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.0ms)
+  Rendered partials/_nav.html.erb (4.9ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:41:03 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+  Rendered partials/_nav.html.erb (5.0ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:41:16 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+  Rendered partials/_nav.html.erb (5.3ms)
+Completed 200 OK in 98ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:41:17 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.1ms)
+  Rendered partials/_nav.html.erb (5.5ms)
+Completed 200 OK in 79ms (Views: 77.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:42:01 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered users/new.html.erb within layouts/application (3502.4ms)
+  Rendered partials/_nav.html.erb (5.9ms)
+Completed 200 OK in 3597ms (Views: 3584.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:42:11 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered users/new.html.erb within layouts/application (3598.6ms)
+  Rendered partials/_nav.html.erb (6.6ms)
+Completed 200 OK in 3697ms (Views: 3684.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:44:07 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.3ms)
+  Rendered partials/_nav.html.erb (5.6ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:44:33 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered users/new.html.erb within layouts/application (3527.8ms)
+  Rendered partials/_nav.html.erb (6.9ms)
+Completed 200 OK in 3633ms (Views: 3615.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:45:16 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.2ms)
+  Rendered partials/_nav.html.erb (4.7ms)
+Completed 200 OK in 79ms (Views: 77.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:45:42 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered users/new.html.erb within layouts/application (3575.8ms)
+  Rendered partials/_nav.html.erb (6.5ms)
+Completed 200 OK in 3665ms (Views: 3652.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:47:13 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+  Rendered partials/_nav.html.erb (5.6ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:50:43 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_nav.html.erb (5.7ms)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:50:57 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+  Rendered partials/_nav.html.erb (5.5ms)
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:52:37 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (3458.8ms)
+Completed 200 OK in 4414ms (Views: 4401.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:53:36 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+  Rendered partials/_nav.html.erb (5.7ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:53:57 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_nav.html.erb (5.9ms)
+Completed 200 OK in 100ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:54:17 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (3476.2ms)
+Completed 200 OK in 3596ms (Views: 3583.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:56:04 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+  Rendered partials/_nav.html.erb (5.8ms)
+Completed 200 OK in 105ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:57:30 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (3485.4ms)
+Completed 200 OK in 3713ms (Views: 3700.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:58:03 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (3475.7ms)
+Completed 200 OK in 4145ms (Views: 4131.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 19:59:49 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (3553.4ms)
+Completed 200 OK in 3717ms (Views: 3703.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:00:35 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+  Rendered partials/_nav.html.erb (12.4ms)
+Completed 200 OK in 2927ms (Views: 2908.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:02:01 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (3723.3ms)
+Completed 200 OK in 3887ms (Views: 3871.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:02:18 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (3535.0ms)
+Completed 200 OK in 3678ms (Views: 3665.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:02:30 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_nav.html.erb (6.1ms)
+Completed 200 OK in 102ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:02:35 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+  Rendered partials/_nav.html.erb (5.3ms)
+Completed 200 OK in 93ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:02:44 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_nav.html.erb (5.5ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:03:09 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (3708.0ms)
+Completed 200 OK in 3847ms (Views: 3832.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:04:16 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered users/new.html.erb within layouts/application (3470.8ms)
+  Rendered partials/_nav.html.erb (7.6ms)
+Completed 200 OK in 3574ms (Views: 3559.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:05:45 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (3305.8ms)
+Completed 200 OK in 3676ms (Views: 3661.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:06:20 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_nav.html.erb (5.4ms)
+Completed 200 OK in 84ms (Views: 70.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:16:19 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (4223.4ms)
+Completed 200 OK in 6513ms (Views: 6493.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:16:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+  Rendered partials/_nav.html.erb (16.2ms)
+Completed 200 OK in 1962ms (Views: 1942.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:17:37 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+  Rendered partials/_nav.html.erb (5.3ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:19:43 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+  Rendered partials/_nav.html.erb (12.2ms)
+Completed 200 OK in 125ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:20:03 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (4738.5ms)
+Completed 200 OK in 4867ms (Views: 4851.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:22:05 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+  Rendered partials/_nav.html.erb (17.5ms)
+Completed 200 OK in 2079ms (Views: 2060.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:23:24 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+  Rendered partials/_nav.html.erb (5.9ms)
+Completed 200 OK in 73ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:25:46 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (3875.9ms)
+Completed 200 OK in 6397ms (Views: 6377.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-05 20:28:15 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/ctn501/Desktop/kidKash/public/packs
+  Rendered partials/_nav.html.erb (4844.8ms)
+Completed 200 OK in 5012ms (Views: 4967.9ms | ActiveRecord: 0.8ms)
+
+

@@ -23,6 +23,7 @@ const SelectAvatar = props => (
   
 )
 
+
 // Hello.defaultProps = {
 //   name: 'David'
 // }
@@ -33,7 +34,9 @@ const SelectAvatar = props => (
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <SelectAvatar name="React" />,
+    <div>
+          <SelectAvatar name="React" />,
+    </div>,
     document.body.appendChild(document.createElement('div')),
   )
 })
