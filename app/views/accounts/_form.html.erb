@@ -22,20 +22,12 @@
     <%= form.text_field :name, id: :account_name %>
   </div>
 
-  <div class="field">
-    <%= form.label :interest_rate %>
-    <%= form.text_field :interest_rate, id: :account_interest_rate %>
-  </div>
-
-  <div class="field">
-    <%= form.label :balance %>
-    <%= form.text_field :balance, id: :account_balance %>
-  </div>
-
-  <div class="field">
-    <%= form.label :type %>
-    <%= form.text_field :type, id: :account_type %>
-  </div>
+  <% if current_user != nil && current_user.role == "Parent" %>
+    <div class="field">
+      <%= form.label :interest_rate %>
+      <%= form.text_field :interest_rate, id: :account_interest_rate %>
+    </div>
+  <% end %>
 
   <div class="actions">
     <%= form.submit %>

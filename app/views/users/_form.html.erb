@@ -34,7 +34,11 @@
     <%= f.file_field :photo, label_html: { class: 'active' }, class: "ui button"  %>
   </div>
 
+
+  
+
   <div class="row">
+
     <div class="form-inputs">
       <% if current_user == nil %>
         <%= f.hidden_field :role, value: "Parent" %>

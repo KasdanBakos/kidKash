@@ -3,6 +3,8 @@ class User < ApplicationRecord
     has_secure_password
     mount_uploader :photo, PhotoUploader
     cattr_accessor :current_user
+    has_many :accounts
+    accepts_nested_attributes_for :accounts
 
     def find_children
         if(current_user.role == "Parent")
@@ -43,8 +45,8 @@ class User < ApplicationRecord
 
     #callback
     def create_accounts
-        Account.create(user: self, name: "Default Checking Account", interest_rate: 0, balance: 0, account_type: "checking")
-        Account.create(user: self, name: "Default Savings Account", interest_rate: 5, balance: 0, account_type: "savings")
+        Account.create(user: self, name: "Default Checking Account", balance: 0, account_type: "checking")
+        Account.create(user: self, name: "Default Savings Account", balance: 0, account_type: "savings")
     end
 
 
