@@ -12,7 +12,9 @@ class User < ApplicationRecord
 
     #0 is checking 1 is savings
     def get_children_accounts
-        current_user.find_children.map{ |c| [c.get_accounts(c)[0], c.get_accounts(c)[1]]}.flatten
+        if(current_user.role == "Parent")
+            current_user.find_children.map{ |c| [c.get_accounts(c)[0], c.get_accounts(c)[1]]}.flatten
+        end
     end
 
     def get_accounts(user)

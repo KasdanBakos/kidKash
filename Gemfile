@@ -82,7 +82,6 @@ gem 'react-rails'
 gem 'webpacker'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
-
 # Materialize and UI gems
 gem 'best_in_place', '~> 3.0.1'
 gem 'materialize-sass', '0.100.2'
