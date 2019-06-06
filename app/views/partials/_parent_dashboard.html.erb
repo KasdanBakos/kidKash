@@ -37,11 +37,11 @@
   </thead>
 
   <tbody>
-    <% @your_children.each do |child| %>
+    <% @your_children_accounts.each do |child| %>
       <tr>
-        <td><%= link_to child.first_name, child %></td>
-        <td><%= link_to child.get_accounts(child)[0].name, child.get_accounts(child)[0] %></td>
-        <td><%= link_to child.get_accounts(child)[1].name, child.get_accounts(child)[1] %></td>
+        <td><%= link_to child.get_user.first.username, child.get_user %></td>
+        <td><%= link_to child.name, child %></td>
+        <td><%= link_to child.name, child %></td>
       </tr>
     <% end %>
   </tbody>

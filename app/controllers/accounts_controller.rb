@@ -7,7 +7,7 @@ class AccountsController < ApplicationController
     @accounts = Account.all
     #need to add the childrens accounts to this list
     @parent_accounts = Account.all.select{|a| a.user_id == current_user.id}
-    @children_accounts = Account.all.select{|a| a.user_id == current_user.id}
+    # @children_accounts = Account.all.select{|a| a.user_id == current_user.id}
   end
 
   # GET /accounts/1

@@ -1,0 +1,21 @@
+<h2>Welcome, <%= current_user.first_name %> <%= current_user.last_name %> </h2>
+
+<h3>My Accounts: </h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Checking Account</th>
+      <th>Savings Account</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= link_to @my_accounts[0].name, @my_accounts[0] %></td>
+      <td><%= link_to @my_accounts[1].name, @my_accounts[1] %></td>
+    </tr>
+  </tbody>
+</table>

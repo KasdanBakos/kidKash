@@ -10,13 +10,16 @@ class User < ApplicationRecord
         end
     end
 
+    #0 is checking 1 is savings
+    def get_children_accounts
+        current_user.find_children.map{ |c| [c.get_accounts(c)[0], c.get_accounts(c)[1]]}.flatten
+    end
+
     def get_accounts(user)
         if(current_user.role != nil)
             Account.all.select{ |a| a.user_id == self.id }
         end
     end
-
-
 
 
     after_create :create_accounts
@@ -26,10 +29,6 @@ class User < ApplicationRecord
         Account.create(user: self, name: "Default Checking Account", interest_rate: 0, balance: 0, account_type: "checking")
         Account.create(user: self, name: "Default Savings Account", interest_rate: 5, balance: 0, account_type: "savings")
     end
-
-    # def parent_account?
-    #     return current_user.role == "Parent"
-    # end
 
 
     # login by username

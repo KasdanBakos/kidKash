@@ -4,8 +4,8 @@ class CreateTransactions < ActiveRecord::Migration[5.1]
       t.float :amount
       t.string :description
       t.string :type
-      t.references :to_account, foreign_key: true
-      t.references :from_account, foreign_key: true
+      t.integer :to_account
+      t.integer :from_account
       t.datetime :date
 
       t.timestamps
